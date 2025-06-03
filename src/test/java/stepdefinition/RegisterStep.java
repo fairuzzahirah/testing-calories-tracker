@@ -14,21 +14,48 @@ public class RegisterStep {
         driver.get("http://localhost:8080/register");
     }
 
-    @When("User fills out the form")
-    public void user_fills_out_the_form() {
+    @When("User enter username")
+    public void i_enter_username() {
         driver.findElement(By.id("name")).sendKeys("Frederick");
-        driver.findElement(By.id("email")).sendKeys("frederic@gmail.com");
-        driver.findElement(By.id("password")).sendKeys("password123");
+    }
+
+    @And("User enter email")
+    public void i_enter_email() {
+        driver.findElement(By.id("email")).sendKeys("fredec@gmail.com");
+    }
+    @And("User enter password")
+    public void i_enter_password() {
+            driver.findElement(By.id("password")).sendKeys("password123");
+    }
+    @And("User enter password confirm")
+    public void i_enter_passwordconfirm() {
         driver.findElement(By.id("password_confirmation")).sendKeys("password123");
+    }
+    @And("User enter age")
+    public void i_enter_age() {
         driver.findElement(By.id("age")).sendKeys("22");
+    }
+
+    @And("User enter height")
+    public void i_enter_height() {
         driver.findElement(By.id("height_cm")).sendKeys("175");
+    }
+    @And("User enter weight")
+    public void i_enter_weight() {
         driver.findElement(By.id("weight_kg")).sendKeys("65");
+    }
+    @And("User select gender")
+    public void i_select_gender() {
         Select gender = new Select(driver.findElement(By.id("gender")));
         gender.selectByValue("female");
-
+    }
+    @And("User select goal")
+    public void i_select_goal() {
         Select goal = new Select(driver.findElement(By.id("goal")));
         goal.selectByValue("maintain");
-
+    }
+    @And("User select activity level")
+    public void i_select_activityLevel() {
         Select activityLevel = new Select(driver.findElement(By.id("activity_level")));
         activityLevel.selectByValue("light");
     }
