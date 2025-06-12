@@ -17,4 +17,4 @@ Feature: User Registration
     And User select goal
     And User select activity level
     And User submits the form
-    Then User should be redirected to dashboard
+    Then User should be redirected to login page

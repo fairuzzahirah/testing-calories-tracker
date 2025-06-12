@@ -1,9 +1,14 @@
 package stepdefinition;
 
-import io.cucumber.java.en.*;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class RegisterStep {
     WebDriver driver;
@@ -58,16 +63,14 @@ public class RegisterStep {
     public void i_select_activityLevel() {
         Select activityLevel = new Select(driver.findElement(By.id("activity_level")));
         activityLevel.selectByValue("light");
-    }
-
-    @And("User submits the form")
+    }    @And("User submits the form")
     public void user_submits_the_form() {
         driver.findElement(By.xpath("//button[@type='submit']")).click();
     }
 
-    @Then("User should be redirected to dashboard")
+    @Then("User should be redirected to login page")
     public void user_should_be_redirected_to_login_page() {
-        boolean isLoginPage = driver.getCurrentUrl().contains("/dashboard") ||
+        boolean isLoginPage = driver.getCurrentUrl().contains("/login") ||
                 driver.getTitle().toLowerCase().contains("login") ||
                 driver.getPageSource().contains("Log in");
 
