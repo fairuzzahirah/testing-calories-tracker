@@ -74,6 +74,7 @@ public class RegisterStep {
     public void user_submits_the_form() {
         driver.findElement(By.xpath("//button[@type='submit']")).click();
     }
+
     @Then("User should see password too short error")
     public void user_should_see_password_too_short_error() {
         String pageSource = driver.getPageSource().toLowerCase();
