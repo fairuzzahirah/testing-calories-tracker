@@ -1,18 +1,17 @@
 package stepdefinition;
 
 import io.cucumber.java.en.*;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.RegisterPage;
 
 public class RegisterStep {
-    WebDriver driver;
-    RegisterPage registerPage;
-
+    WebDriver driver = util.SharedDriver.getDriver();
+    RegisterPage registerPage = new RegisterPage(driver);
+    
     @Given("User is on the form page")
     public void user_is_on_form_page() {
-        driver = new ChromeDriver();
-        registerPage = new RegisterPage(driver);
         registerPage.goTo();
     }
 
@@ -74,13 +73,30 @@ public class RegisterStep {
     @Then("User should see password too short error")
     public void user_should_see_password_too_short_error() {
         assert registerPage.isPasswordTooShortErrorShown();
-        driver.quit();
     }
 
     @Then("User should be redirected to dashboard")
     public void user_should_be_redirected_to_dashboard() {
         assert registerPage.isAtDashboard();
-        registerPage.clickAddFoodEntry();
-        driver.quit();
+        registerPage.clickAddFoodEntry(); // pindah ke halaman food entry
     }
+    @Given("User has registered and is logged in")
+    public void user_has_registered_and_is_logged_in() {
+        RegisterPage registerPage = new RegisterPage(driver);
+        registerPage.goTo();
+        registerPage.enterUsername("TestUser");
+        registerPage.enterEmail("AUTO"); // email unik setiap run
+        registerPage.enterPassword("password123");
+        registerPage.enterPasswordConfirmation("password123");
+        registerPage.enterAge("25");
+        registerPage.enterHeight("170");
+        registerPage.enterWeight("60");
+        registerPage.selectGender("male");
+        registerPage.selectGoal("maintain");
+        registerPage.selectActivityLevel("moderate");
+        registerPage.submitForm();
+
+        Assertions.assertTrue(registerPage.isAtDashboard()); // validasi login berhasil
+    }
+
 }
