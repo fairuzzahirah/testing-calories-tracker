@@ -32,13 +32,6 @@ public class Hooks {
         }
     }
 
-//    @After(order = 1)
-//    public void tearDown() {
-//        // Jangan tutup driver otomatis, biar bisa reuse di scenario lain kalau perlu
-//        // Tapi kalau mau clean up di akhir semua, bisa aktifin baris di bawah ini
-//        // SharedDriver.closeDriver();
-//    }
-
     @After
     public void flushReport() {
         extent.flush(); // Tutup dan simpan report HTML
@@ -46,6 +39,6 @@ public class Hooks {
 
     @AfterAll
     public static void afterAllTests() {
-        SharedDriver.closeDriver(); // ini akan menutup driver sekali setelah semua scenario selesai
+        SharedDriver.closeDriver();
     }
 }

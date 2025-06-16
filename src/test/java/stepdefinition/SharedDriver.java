@@ -10,7 +10,7 @@ public class SharedDriver {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            driver = new ChromeDriver(); // bisa juga FirefoxDriver atau lainnya
+            driver = new ChromeDriver();
         }
         return driver;
     }

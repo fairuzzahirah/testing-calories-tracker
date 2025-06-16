@@ -38,16 +38,6 @@ public class FoodEntryStep {
         foodPage.enterServingUnit(unit);
     }
 
-//    @And("User selects source {string}")
-//    public void user_selects_source(String source) {
-//        foodPage.selectSource(source);
-//    }
-
-//    @And("User selects date {string} in {string}")
-//    public void user_selects_date(String day, String monthYear) {
-//        foodPage.selectDate(day, monthYear);
-//    }
-
     @And("User submits the food entry form")
     public void user_submits_food_entry_form() {
         foodPage.clickSubmit();

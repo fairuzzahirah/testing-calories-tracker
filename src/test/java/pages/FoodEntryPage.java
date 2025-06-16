@@ -23,8 +23,6 @@ public class FoodEntryPage {
         driver.findElement(By.xpath("//a[contains(@href, '/food/create')]")).click();
     }
 
-
-
     public void enterFoodName(String foodName) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("food_name")));
