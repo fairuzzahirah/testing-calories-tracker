@@ -2,11 +2,10 @@ package stepdefinition;
 
 import io.cucumber.java.en.*;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import pages.FoodEntryPage;
 
 public class FoodEntryStep {
-    WebDriver driver = util.SharedDriver.getDriver();
+    WebDriver driver = stepdefinition.SharedDriver.getDriver();
     FoodEntryPage foodPage = new FoodEntryPage(driver);
 
     @Given("User is on the food entry page")
@@ -38,6 +37,16 @@ public class FoodEntryStep {
     public void user_enters_serving_unit(String unit) {
         foodPage.enterServingUnit(unit);
     }
+
+//    @And("User selects source {string}")
+//    public void user_selects_source(String source) {
+//        foodPage.selectSource(source);
+//    }
+
+//    @And("User selects date {string} in {string}")
+//    public void user_selects_date(String day, String monthYear) {
+//        foodPage.selectDate(day, monthYear);
+//    }
 
     @And("User submits the food entry form")
     public void user_submits_food_entry_form() {

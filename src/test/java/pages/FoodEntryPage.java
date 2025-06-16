@@ -2,6 +2,11 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class FoodEntryPage {
     WebDriver driver;
@@ -11,20 +16,22 @@ public class FoodEntryPage {
     }
 
     public void goTo() {
-        driver.get("http://127.0.0.1:8080/food");
+        driver.get("http://localhost:8080/food");
     }
 
     public void clickAddFoodEntryButton() {
-        driver.findElement(By.linkText("Add Food Entry")).click();
+        driver.findElement(By.xpath("//a[contains(@href, '/food/create')]")).click();
     }
 
+
+
     public void enterFoodName(String foodName) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("food_name")));
         driver.findElement(By.id("food_name")).sendKeys(foodName);
     }
 
-    public void enterCaloriesPerServing(String calories) {
-        driver.findElement(By.id("calories_per_serving")).sendKeys(calories);
-    }
+    public void enterCaloriesPerServing(String calories) { driver.findElement(By.id("calories_per_serving")).sendKeys(calories);}
 
     public void enterServingAmount(String amount) {
         driver.findElement(By.id("serving_amount")).sendKeys(amount);
@@ -33,6 +40,22 @@ public class FoodEntryPage {
     public void enterServingUnit(String unit) {
         driver.findElement(By.id("serving_unit")).sendKeys(unit);
     }
+
+//    public void selectSource(String sourceValue) {
+//        Select source = new Select(driver.findElement(By.id("source")));
+//        source.selectByValue(sourceValue);
+//    }
+//    public void selectDate(String day, String monthYear) {
+//        driver.findElement(By.id("your_date_input_id")).click();
+//        while (true) {
+//            String currentMonthYear = driver.findElement(By.id("consumed_at")).getText();
+//            if (currentMonthYear.equals(monthYear)) {
+//                break;
+//            }
+//            driver.findElement(By.cssSelector(".next")).click(); // klik next hingga ketemu
+//        }
+//        driver.findElement(By.xpath("//td[not(contains(@class,'old')) and text()='" + day + "']")).click();
+//    }
 
     public void clickSubmit() {
         driver.findElement(By.xpath("//button[@type='submit']")).click();

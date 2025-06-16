@@ -1,6 +1,6 @@
 Feature: Food Entry
   Background:
-    Given User has registered and is logged in
+    Given User is logged in
 
   Scenario: Fails to add food entry due to empty food name
     Given User is on the food entry page
@@ -12,7 +12,7 @@ Feature: Food Entry
     And User submits the food entry form
     Then User should see validation error
 
-  Scenario: Successfully adding a food entry
+  Scenario: Add food entry
     Given User is on the food entry page
     When User clicks the Add Food Entry button
     And User enters food name "Apple"

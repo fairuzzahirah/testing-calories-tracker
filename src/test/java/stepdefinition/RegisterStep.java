@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import pages.RegisterPage;
 
 public class RegisterStep {
-    WebDriver driver = util.SharedDriver.getDriver();
+    WebDriver driver = stepdefinition.SharedDriver.getDriver();
     RegisterPage registerPage = new RegisterPage(driver);
     
     @Given("User is on the form page")
