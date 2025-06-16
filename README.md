@@ -1,13 +1,6 @@
-Certainly! Here's the full `README.md` in **English** with clear explanations for each folder and file in your `testing-calories-tracker` test automation project:
-
----
-
-````markdown
 # 🧪 Testing Calories Tracker
 
 An automated end-to-end testing framework for a Laravel-based Calories Tracker application (both frontend and backend), built using **Java**, **Selenium WebDriver**, **Cucumber**, and **Gherkin**.
-
----
 
 ## 📁 Project Structure Overview
 
