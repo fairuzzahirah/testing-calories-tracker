@@ -68,3 +68,30 @@ Feature: Authentication
     When I click the logout button
     Then I should be redirected to the login page
     And my session should be cleared
+
+  @positive @integration @TC-025
+  Scenario: TC-025 - Complete user journey - Registration to full application usage
+    Given I am on the register page
+    When I register a new user with:
+      | name                  | Integration Test User     |
+      | email                | integration@test.com      |
+      | password             | testpass123               |
+      | password_confirmation | testpass123               |
+      | age                  | 30                        |
+      | gender               | female                    |
+      | height               | 165                       |
+      | weight               | 60                        |
+      | goal                 | maintain                  |
+      | activity_level       | active                    |
+    Then I should be automatically logged in
+    And I should be redirected to the dashboard
+    When I add a food entry from database
+    And I create a custom food item
+    And I search for food in USDA database
+    And I use the AI chatbot for nutrition advice
+    And I view my dashboard analytics
+    And I update my profile information
+    Then all features should work correctly
+    When I logout from the application
+    Then I should be redirected to the login page
+    And I can login again with the same credentials
