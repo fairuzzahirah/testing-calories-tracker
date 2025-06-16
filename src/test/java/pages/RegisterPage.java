@@ -71,6 +71,7 @@ public class RegisterPage {
     }
 
     public boolean isAtDashboard() {
+        System.out.println(driver.getCurrentUrl());
         return driver.getCurrentUrl().contains("/dashboard");
     }
 
