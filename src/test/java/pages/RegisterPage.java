@@ -1,80 +1,211 @@
 package pages;
 
-import org.openqa.selenium.*;
+import java.time.Duration;
+import java.util.Map;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RegisterPage {
-    WebDriver driver;
+    private WebDriver driver;
+    private WebDriverWait wait;    // Page URL
+    private static final String REGISTER_URL = "http://localhost:8080/register";
 
+    // Web Elements
+    @FindBy(id = "name")
+    private WebElement nameField;
+
+    @FindBy(id = "email")
+    private WebElement emailField;
+
+    @FindBy(id = "password")
+    private WebElement passwordField;
+
+    @FindBy(id = "password_confirmation")
+    private WebElement passwordConfirmationField;
+
+    @FindBy(id = "age")
+    private WebElement ageField;
+
+    @FindBy(id = "gender")
+    private WebElement genderSelect;    @FindBy(id = "height_cm")
+    private WebElement heightField;
+
+    @FindBy(id = "weight_kg")
+    private WebElement weightField;
+
+    @FindBy(id = "goal")
+    private WebElement goalSelect;
+
+    @FindBy(id = "activity_level")
+    private WebElement activityLevelSelect;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    private WebElement registerButton;
+
+    @FindBy(css = ".alert-success")
+    private WebElement successMessage;    @FindBy(css = ".text-red-600, .alert-danger, .invalid-feedback")
+    private WebElement errorMessage;
+
+    // Constructor
     public RegisterPage(WebDriver driver) {
         this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        PageFactory.initElements(driver, this);
     }
 
-    public void goTo() {
-        driver.get("http://localhost:8080/register");
+    // Actions
+    public void navigateToRegisterPage() {
+        driver.get(REGISTER_URL);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("name")));
     }
 
-    public void enterUsername(String username) {
-        driver.findElement(By.id("name")).sendKeys(username);
+    public void fillRegistrationForm(Map<String, String> userData) {
+        wait.until(ExpectedConditions.elementToBeClickable(nameField));
+        
+        nameField.clear();
+        nameField.sendKeys(userData.get("name"));
+        
+        emailField.clear();
+        emailField.sendKeys(userData.get("email"));
+        
+        passwordField.clear();
+        passwordField.sendKeys(userData.get("password"));
+        
+        passwordConfirmationField.clear();
+        passwordConfirmationField.sendKeys(userData.get("password_confirmation"));
+        
+        ageField.clear();
+        ageField.sendKeys(userData.get("age"));
+        
+        Select genderDropdown = new Select(genderSelect);
+        genderDropdown.selectByValue(userData.get("gender"));
+        
+        heightField.clear();
+        heightField.sendKeys(userData.get("height"));
+        
+        weightField.clear();
+        weightField.sendKeys(userData.get("weight"));
+        
+        Select goalDropdown = new Select(goalSelect);
+        goalDropdown.selectByValue(userData.get("goal"));
+        
+        Select activityDropdown = new Select(activityLevelSelect);
+        activityDropdown.selectByValue(userData.get("activity_level"));
     }
 
-    public void enterEmail(String email) {
-        if (email.equalsIgnoreCase("AUTO")) {
-            email = "user" + System.currentTimeMillis() + "@example.com";
+    public void fillRegistrationFormWithExistingEmail(String existingEmail) {
+        wait.until(ExpectedConditions.elementToBeClickable(nameField));
+        
+        nameField.clear();
+        nameField.sendKeys("Jane Doe");
+        
+        emailField.clear();
+        emailField.sendKeys(existingEmail);
+        
+        passwordField.clear();
+        passwordField.sendKeys("password123");
+        
+        passwordConfirmationField.clear();
+        passwordConfirmationField.sendKeys("password123");
+        
+        ageField.clear();
+        ageField.sendKeys("30");
+        
+        Select genderDropdown = new Select(genderSelect);
+        genderDropdown.selectByValue("female");
+        
+        heightField.clear();
+        heightField.sendKeys("165");
+        
+        weightField.clear();
+        weightField.sendKeys("60");
+        
+        Select goalDropdown = new Select(goalSelect);
+        goalDropdown.selectByValue("maintain");
+        
+        Select activityDropdown = new Select(activityLevelSelect);
+        activityDropdown.selectByValue("light");
+    }
+
+    public void fillRegistrationFormWithMismatchedPassword(String password, String confirmation) {
+        wait.until(ExpectedConditions.elementToBeClickable(nameField));
+        
+        nameField.clear();
+        nameField.sendKeys("Test User");
+        
+        emailField.clear();
+        emailField.sendKeys("test@example.com");
+        
+        passwordField.clear();
+        passwordField.sendKeys(password);
+        
+        passwordConfirmationField.clear();
+        passwordConfirmationField.sendKeys(confirmation);
+        
+        ageField.clear();
+        ageField.sendKeys("25");
+        
+        Select genderDropdown = new Select(genderSelect);
+        genderDropdown.selectByValue("male");
+        
+        heightField.clear();
+        heightField.sendKeys("180");
+        
+        weightField.clear();
+        weightField.sendKeys("75");
+        
+        Select goalDropdown = new Select(goalSelect);
+        goalDropdown.selectByValue("gain");
+        
+        Select activityDropdown = new Select(activityLevelSelect);
+        activityDropdown.selectByValue("active");
+    }
+
+    public void clickRegisterButton() {
+        wait.until(ExpectedConditions.elementToBeClickable(registerButton));
+        registerButton.click();
+    }
+
+    // Verifications
+    public boolean isOnRegisterPage() {
+        return driver.getCurrentUrl().contains("/register");
+    }
+
+    public String getSuccessMessage() {
+        try {
+            wait.until(ExpectedConditions.visibilityOf(successMessage));
+            return successMessage.getText();
+        } catch (Exception e) {
+            return "";
         }
-        driver.findElement(By.id("email")).sendKeys(email);
     }
 
-    public void enterPassword(String password) {
-        driver.findElement(By.id("password")).sendKeys(password);
+    public String getErrorMessage() {
+        try {
+            wait.until(ExpectedConditions.visibilityOf(errorMessage));
+            return errorMessage.getText();
+        } catch (Exception e) {
+            return "";
+        }
     }
 
-    public void enterPasswordConfirmation(String passwordConfirm) {
-        driver.findElement(By.id("password_confirmation")).sendKeys(passwordConfirm);
+    public boolean hasErrorMessage() {
+        try {
+            return errorMessage.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
     }
 
-    public void enterAge(String age) {
-        driver.findElement(By.id("age")).sendKeys(age);
-    }
-
-    public void enterHeight(String height) {
-        driver.findElement(By.id("height_cm")).sendKeys(height);
-    }
-
-    public void enterWeight(String weight) {
-        driver.findElement(By.id("weight_kg")).sendKeys(weight);
-    }
-
-    public void selectGender(String genderValue) {
-        Select gender = new Select(driver.findElement(By.id("gender")));
-        gender.selectByValue(genderValue);
-    }
-
-    public void selectGoal(String goalValue) {
-        Select goal = new Select(driver.findElement(By.id("goal")));
-        goal.selectByValue(goalValue);
-    }
-
-    public void selectActivityLevel(String activityLevelValue) {
-        Select activity = new Select(driver.findElement(By.id("activity_level")));
-        activity.selectByValue(activityLevelValue);
-    }
-
-    public void submitForm() {
-        driver.findElement(By.xpath("//button[@type='submit']")).click();
-    }
-
-    public boolean isPasswordTooShortErrorShown() {
-        String pageSource = driver.getPageSource().toLowerCase();
-        return pageSource.contains("password must be at least 8 characters") ||
-                pageSource.contains("password minimal 8 karakter");
-    }
-
-    public boolean isAtDashboard() {
+    public boolean isRedirectedToDashboard() {
+        wait.until(ExpectedConditions.urlContains("/dashboard"));
         return driver.getCurrentUrl().contains("/dashboard");
-    }
-
-    public void clickAddFoodEntry() {
-        driver.findElement(By.linkText("Add Food Entry")).click();
     }
 }
