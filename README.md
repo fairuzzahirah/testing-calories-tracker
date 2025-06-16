@@ -32,10 +32,10 @@ testing-calories-tracker/
 
 ## 🛠️ Tools & Dependencies
 
-- **Java 17+**
+- **JDK 21**
 - **Cucumber-Java**
 - **Selenium WebDriver**
-- **JUnit (4 or 5)**
+- **JUnit 5**
 - **ExtentReports** – for visual HTML reporting
 - **WebDriverManager** – for auto browser driver management
 
