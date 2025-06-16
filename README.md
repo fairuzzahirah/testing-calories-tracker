@@ -6,21 +6,27 @@ This project contains automated end-to-end tests for a **Laravel-based web appli
 
 ## 📁 Project Structure
 
+```bash
 testing-calories-tracker/
 │
 ├── src/
-│ ├── main/java/
-│ │ └── pages/ # Page Object Model (POM) for each feature/page
-│ ├── test/java/
-│ │ └── stepdefinition/ # Step definitions for Gherkin steps
-│ │ └── runner/ # Cucumber runner class
-│ │ └── utils/ # Extent report, screenshot utility, etc.
+│   ├── main/
+│   │   └── java/
+│   │       └── pages/                # Page Object Model (POM) for each page/feature
+│   │
+│   └── test/
+│       └── java/
+│           ├── stepdefinition/      # Step definitions matching Gherkin steps
+│           ├── runner/              # Cucumber test runner class
+│           └── utils/               # ExtentReport manager, Screenshot utility, etc.
 │
-├── features/ # Gherkin feature files (*.feature)
+├── features/                        # Gherkin feature files (*.feature)
 │
 ├── testoutput/
-│ └── ExtentReport.html # HTML report generated after running tests
+│   └── ExtentReport.html            # Auto-generated HTML report after test run
 │
-└── screenshots/ # Saved screenshots on failed steps
+└── screenshots/                     # Captured screenshots for failed steps
+
+
 
 
