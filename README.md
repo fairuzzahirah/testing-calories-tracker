@@ -2,6 +2,68 @@
 
 An automated end-to-end testing framework for a Laravel-based Calories Tracker application (both frontend and backend), built using **Java**, **Selenium WebDriver**, **Cucumber**, and **Gherkin**.
 
+## ⚙️ Prerequisites
+
+Before running the tests, make sure you have:
+
+### 1. ✅ Backend Setup
+
+Clone and run the backend Laravel app:
+
+```bash
+git clone https://github.com/Govandwia/backend_calories_tracker.git
+cd backend_calories_tracker
+````
+
+Install backend dependencies:
+
+```bash
+composer install
+cp .env.example .env
+php artisan key:generate
+```
+
+Set up database in `.env`, then migrate and seed:
+
+```bash
+php artisan migrate --seed
+php artisan serve
+```
+
+The backend API will be running, typically at:
+`http://127.0.0.1:8000`
+
+---
+
+### 2. ✅ Frontend Setup
+
+Clone and serve the frontend Laravel project:
+
+```bash
+git clone https://github.com/Govandwia/frontend_calories_tracker.git
+cd frontend_calories_tracker
+```
+
+Install frontend dependencies:
+
+```bash
+composer install
+npm install
+cp .env.example .env
+php artisan key:generate
+```
+
+Update `.env` to point to your backend (e.g., `http://127.0.0.1:8000`), then:
+
+```bash
+php artisan serve
+```
+
+The frontend app will be served, usually at:
+`http://127.0.0.1:8000` or `http://localhost:8000`
+
+✅ Once both apps are running and accessible via browser, proceed to test setup below.
+
 ## 📁 Project Structure Overview
 
 ```bash
@@ -48,7 +110,6 @@ testing-calories-tracker/
     # Helps in debugging and visual validation.
 ````
 
----
 
 ## ✅ Tech Stack
 
@@ -93,28 +154,24 @@ Feature: User Registration
     Then User should be redirected to dashboard
 ```
 
----
-
-## 🚀 How to Run the Tests
-
-> **Requirements:** Java 11+, Maven or Gradle, ChromeDriver (or other driver)
-
-### Using Maven:
-
-```bash
-mvn test
-```
-
-### Using Gradle:
-
-```bash
-gradle test
-```
+## 📊 Test Results
 
 After execution:
 
-* 📊 Test report: `testoutput/ExtentReport.html`
-* 📸 Screenshots on failure: `screenshots/`
+* 📄 `testoutput/ExtentReport.html`: open in browser to see full report with steps
+* 📷 `screenshots/`: failed step screenshots will be stored here
+* ✅ Console log will show scenario progress and pass/fail summary
+
+
+## 🧠 Project Purpose
+
+This test project was built to:
+
+* Validate the full user flow in a real Laravel fullstack app
+* Practice clean BDD design (Cucumber + Gherkin)
+* Demonstrate Extent Reports and automated screenshots for failed steps
+* Reuse drivers efficiently with `SharedDriver` and lifecycle hooks
+
 
 ---
 
