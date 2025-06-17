@@ -9,7 +9,7 @@ Feature: Custom Food
     And User enters custom food calories "120"
     And User enters custom food serving unit "piece"
     And User selects custom food category "Vegetables"
-    And User enters custom food notes "Goreng pakai minyak jagung"
+    And User enters custom food notes "Fried Using Corn Oil"
     And User submits the custom food form
     Then User should see custom food validation error
 
@@ -20,6 +20,6 @@ Feature: Custom Food
     And User enters custom food calories "120"
     And User enters custom food serving unit "piece"
     And User selects custom food category "Vegetables"
-    And User enters custom food notes "Goreng pakai minyak jagung"
+    And User enters custom food notes "Fried Using Corn Oil"
     And User submits the custom food form
     Then User should see custom food success message
