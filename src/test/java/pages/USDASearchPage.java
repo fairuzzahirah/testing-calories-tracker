@@ -1,14 +1,15 @@
 package pages;
 
+import java.time.Duration;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import java.time.Duration;
-import java.util.List;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class USDASearchPage {
     private final WebDriver driver;
@@ -51,13 +52,15 @@ public class USDASearchPage {
     @FindBy(css = ".alert-danger, .invalid-feedback")
     private WebElement errorMessage;
 
-    @FindBy(css = ".validation-error")
+    @FindBy(css = ".validation-error, .text-red-600, .text-red-500, .error-message")
     private List<WebElement> validationErrors;
 
-    @FindBy(css = ".api-error-message")
+    // Additional selector for USDA specific validation messages
+    @FindBy(css = ".text-red-600, .text-red-500, .text-danger, [style*='color: red'], [class*='text-red']")
+    private List<WebElement> usdaValidationMessages;    @FindBy(css = ".api-error-message, .error-message, .alert-danger, .text-red-600, .bg-red-100, [data-testid='api-error']")
     private WebElement apiErrorMessage;
 
-    @FindBy(css = ".no-results")
+    @FindBy(css = ".no-results, .no-results-message, .text-gray-500")
     private WebElement noResultsMessage;
 
     // Constructor
@@ -206,11 +209,44 @@ public class USDASearchPage {
         } catch (Exception e) {
             return "";
         }
+    }    public String getValidationError() {
+        try {
+            // First check for HTML5 validation message
+            String html5Message = getHTML5ValidationMessage();
+            if (!html5Message.isEmpty()) {
+                return html5Message;
+            }
+            
+            // Check for USDA specific validation messages (red text)
+            if (!usdaValidationMessages.isEmpty()) {
+                for (WebElement validationElement : usdaValidationMessages) {
+                    if (validationElement.isDisplayed() && !validationElement.getText().trim().isEmpty()) {
+                        return validationElement.getText().trim();
+                    }
+                }
+            }
+            
+            // Fallback to regular validation errors
+            if (!validationErrors.isEmpty()) {
+                for (WebElement validationElement : validationErrors) {
+                    if (validationElement.isDisplayed() && !validationElement.getText().trim().isEmpty()) {
+                        return validationElement.getText().trim();
+                    }
+                }
+            }
+            
+            return "";
+        } catch (Exception e) {
+            return "";
+        }
     }
 
-    public String getValidationError() {
+    public String getHTML5ValidationMessage() {
         try {
-            return validationErrors.isEmpty() ? "" : validationErrors.get(0).getText();
+            // HTML5 validation message can be retrieved from the search field
+            String validationMessage = (String) ((org.openqa.selenium.JavascriptExecutor) driver)
+                    .executeScript("return arguments[0].validationMessage;", searchQueryField);
+            return validationMessage != null ? validationMessage : "";
         } catch (Exception e) {
             return "";
         }
@@ -222,12 +258,44 @@ public class USDASearchPage {
         } catch (Exception e) {
             return false;
         }
-    }
-
-    public String getApiErrorMessage() {
+    }    public String getApiErrorMessage() {
         try {
-            wait.until(ExpectedConditions.visibilityOf(apiErrorMessage));
-            return apiErrorMessage.getText();
+            // Look for various API error messages
+            List<WebElement> errorElements = driver.findElements(By.cssSelector(
+                ".api-error-message, .error-message, .alert-danger, .text-red-600, .bg-red-100, [data-testid='api-error'], .alert-error"
+            ));
+            
+            for (WebElement element : errorElements) {
+                if (element.isDisplayed() && !element.getText().trim().isEmpty()) {
+                    String errorText = element.getText().trim();
+                    // Check if it looks like an API error message
+                    if (errorText.toLowerCase().contains("service") || 
+                        errorText.toLowerCase().contains("unavailable") ||
+                        errorText.toLowerCase().contains("temporarily") ||
+                        errorText.toLowerCase().contains("try again") ||
+                        errorText.toLowerCase().contains("timeout") ||
+                        errorText.toLowerCase().contains("connection")) {
+                        return errorText;
+                    }
+                }
+            }
+            
+            // Also check if there are no results which might indicate API issues
+            List<WebElement> noResultsElements = driver.findElements(By.cssSelector(
+                ".no-results, .no-results-message, .text-gray-500"
+            ));
+            
+            for (WebElement element : noResultsElements) {
+                if (element.isDisplayed() && !element.getText().trim().isEmpty()) {
+                    String noResultsText = element.getText().trim();
+                    if (noResultsText.toLowerCase().contains("service") ||
+                        noResultsText.toLowerCase().contains("unavailable")) {
+                        return noResultsText;
+                    }
+                }
+            }
+            
+            return "";
         } catch (Exception e) {
             return "";
         }
@@ -235,7 +303,8 @@ public class USDASearchPage {
 
     public boolean isApiErrorDisplayed() {
         try {
-            return apiErrorMessage.isDisplayed();
+            String apiError = getApiErrorMessage();
+            return !apiError.isEmpty();
         } catch (Exception e) {
             return false;
         }
@@ -251,6 +320,18 @@ public class USDASearchPage {
             return foodItems.size();
         } catch (Exception e) {
             return 0;
+        }
+    }
+
+    public String getCurrentUrl() {
+        return driver.getCurrentUrl();
+    }
+
+    public boolean isAddFoodModalDisplayed() {
+        try {
+            return addFoodModal.isDisplayed();
+        } catch (Exception e) {
+            return false;
         }
     }
 }

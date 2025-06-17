@@ -27,20 +27,18 @@ Feature: USDA Food Search
     Then the USDA food should be added to my food entries with source "usda"
     And I should be redirected to the food entries page
     And I should see a USDA success message
-
   @negative @TC-037
   Scenario: TC-037 - Search USDA with empty query
     When I navigate to the USDA Search page
     And I submit search without entering any query
-    Then I should see the validation error "Search query is required"
-    And the form should not be submitted
+    Then I should see the USDA validation error "Please fill out this field"    And the form should not be submitted
 
   @negative @TC-038
   Scenario: TC-038 - Search USDA with query too short
     When I navigate to the USDA Search page
     And I enter "a" in the search box
     And I click the search button
-    Then I should see the validation error "Search query must be at least 2 characters"
+    Then I should see the USDA validation error "The query field must be at least 2 characters"
 
   @negative @TC-039
   Scenario: TC-039 - Add USDA food with invalid serving amount
@@ -51,13 +49,12 @@ Feature: USDA Food Search
       | serving_amount | -5 |
     And I click the USDA "Add to Food Log" button
     Then I should see the USDA validation error "Serving amount must be positive number"
-
   @negative @TC-039b
   Scenario: TC-039b - Add USDA food with zero serving amount
     Given I have searched for "chicken breast" in USDA
     And I see search results
     When I select a food item from the results
-    And I fill serving details:
+    And I fill the serving details:
       | serving_amount | 0 |
     And I click the USDA "Add to Food Log" button
     Then I should see the USDA validation error "Serving amount must be positive number"

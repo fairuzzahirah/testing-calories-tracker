@@ -51,18 +51,18 @@ Feature: Food Entry Management
   Scenario: TC-010 - Delete food entry
     Given I have a food entry in my account
     When I click the Delete button for that entry
-    Then I should see a food entry confirmation dialog
-    When I confirm the deletion
+    Then I should see a food entry confirmation dialog    When I confirm the deletion
     Then the food entry should be removed from the list
     And I should see a confirmation message
 
   @negative @TC-029
   Scenario: TC-029 - Add food entry with invalid data
-    When I click the "Add Food Entry" button    And I fill the food entry form with invalid data:
-      | food_name            |                          |
+    When I click the "Add Food Entry" button
+    And I fill the food entry form with invalid data:
+      | food_name            | ""                       |
       | calories_per_serving | -50                      |
       | serving_amount       | 0                        |
-      | serving_unit         |                          |
+      | serving_unit         | ""                       |
     And I click the "Add Food Entry" button
     Then I should see food entry validation errors:
       | field                | error_message                         |
@@ -82,7 +82,6 @@ Feature: Food Entry Management
     When I try to delete a food entry that belongs to another user
     Then I should see a food entry 403 Forbidden error
     And I should see the food entry message "Access denied"
-
   @negative @security @TC-032
   Scenario: TC-032 - Submit food entry with XSS payload
     When I click the "Add Food Entry" button
@@ -92,3 +91,18 @@ Feature: Food Entry Management
     Then the input should be sanitized and saved as plain text
     And food entry no script should be executed
     And no alert popup should appear
+
+  @negative @boundary @TC-033
+  Scenario: TC-033 - Add food entry with boundary values
+    When I click the "Add Food Entry" button
+    And I fill the food entry form with boundary data:
+      | food_name            | A very long food name that exceeds the normal character limit for testing the maximum allowed length for food name field validation which should be handled properly by the application |
+      | calories_per_serving | 99999                      |
+      | serving_amount       | 999.99                     |
+      | serving_unit         | cup                        |
+    And I click the "Add Food Entry" button
+    Then I should see food entry validation errors or success based on limits:
+      | field                | validation_type           |
+      | food_name            | max_length_validation     |
+      | calories_per_serving | max_value_validation      |
+      | serving_amount       | max_decimal_validation    |

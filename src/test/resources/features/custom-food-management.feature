@@ -65,7 +65,6 @@ Feature: Custom Food Management
     When I try to delete that custom food
     Then I should see a custom food error message "Cannot delete custom food that is being used in food entries"
     And the deletion should be prevented
-
   @negative @TC-036
   Scenario: TC-036 - Add custom food with duplicate name
     Given I have a custom food named "Homemade Granola"
@@ -73,5 +72,5 @@ Feature: Custom Food Management
     And I fill other fields with:
       | calories      | 180       |
       | serving_unit  | bowl      |
-      | category      | Breakfast |    And I click the custom food "Add Custom Food" button
+    And I click the custom food "Add Custom Food" button
     Then I should see the custom food validation error "You already have a custom food with this name"

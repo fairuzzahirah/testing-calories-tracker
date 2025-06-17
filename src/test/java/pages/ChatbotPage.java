@@ -1,14 +1,15 @@
 package pages;
 
+import java.time.Duration;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import java.time.Duration;
-import java.util.List;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ChatbotPage {
     private final WebDriver driver;
@@ -106,11 +107,16 @@ public class ChatbotPage {
     public void sendQuery(String query) {
         enterQuery(query);
         clickSendButton();
-    }
-
-    public void submitEmptyQuery() {
+    }    public void submitEmptyQuery() {
         wait.until(ExpectedConditions.elementToBeClickable(sendButton));
         sendButton.click();
+        
+        // Wait for potential response or error message after empty submission
+        try {
+            Thread.sleep(2000); // Wait for response
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
     }
 
     public void sendLongQuery(String longQuery) {
@@ -311,6 +317,28 @@ public class ChatbotPage {
             return chatMessages.size();
         } catch (Exception e) {
             return 0;
+        }
+    }
+
+    public String getLatestBotMessage() {
+        try {
+            if (!aiMessages.isEmpty()) {
+                return aiMessages.get(aiMessages.size() - 1).getText();
+            }
+            return "";
+        } catch (Exception e) {
+            return "";
+        }
+    }
+
+    public String getLatestChatMessage() {
+        try {
+            if (!chatMessages.isEmpty()) {
+                return chatMessages.get(chatMessages.size() - 1).getText();
+            }
+            return "";
+        } catch (Exception e) {
+            return "";
         }
     }
 }
