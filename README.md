@@ -60,7 +60,7 @@ php artisan serve
 ```
 
 The frontend app will be served, usually at:
-`http://127.0.0.1:8000` or `http://localhost:8000`
+`http://127.0.0.1:8080` or `http://localhost:8080`
 
 ✅ Once both apps are running and accessible via browser, proceed to test setup below.
 
