@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: testrunner.TC040Runner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 79.842 s <<< FAILURE! - in testrunner.TC040Runner
+USDA Food Search.TC-040 - USDA API timeout or unavailable  Time elapsed: 79.01 s  <<< FAILURE!
+java.lang.AssertionError: Should show API error message or handle API unavailability gracefully. Expected: 'Food search service is temporarily unavailable. Please try again later.', Got: ''
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepdefinition.USDASearchSteps.i_should_see_a_user_friendly_error_message(USDASearchSteps.java:226)
+	at ✽.I should see a user-friendly error message "Food search service is temporarily unavailable. Please try again later."(file:///C:/Code%20love%20life/kuliah/Project/INTERO2/testing-calories-tracker/src/test/resources/features/usda-food-search.feature:77)
+

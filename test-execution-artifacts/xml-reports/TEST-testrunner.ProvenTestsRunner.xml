@@ -1,0 +1,1746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="testrunner.ProvenTestsRunner" time="971.786" tests="24" errors="1" skipped="0" failures="3">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Code love life\kuliah\Project\INTERO2\testing-calories-tracker\target\test-classes;C:\Code love life\kuliah\Project\INTERO2\testing-calories-tracker\target\classes;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-java\4.29.0\selenium-java-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-api\4.29.0\selenium-api-4.29.0.jar;C:\Users\asus\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.29.0\selenium-chrome-driver-4.29.0.jar;C:\Users\asus\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.29.0\selenium-chromium-driver-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-json\4.29.0\selenium-json-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.29.0\selenium-manager-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.29.0\selenium-devtools-v131-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v132\4.29.0\selenium-devtools-v132-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v133\4.29.0\selenium-devtools-v133-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.29.0\selenium-devtools-v85-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.29.0\selenium-edge-driver-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.29.0\selenium-firefox-driver-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-http\4.29.0\selenium-http-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.29.0\selenium-ie-driver-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.29.0\selenium-remote-driver-4.29.0.jar;C:\Users\asus\.m2\repository\com\google\guava\guava\33.4.0-jre\guava-33.4.0-jre.jar;C:\Users\asus\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\asus\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\asus\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\asus\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\asus\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-api\1.46.0\opentelemetry-api-1.46.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-context\1.46.0\opentelemetry-context-1.46.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.46.0\opentelemetry-exporter-logging-1.46.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.46.0\opentelemetry-sdk-common-1.46.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.46.0\opentelemetry-sdk-extension-autoconfigure-spi-1.46.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.46.0\opentelemetry-sdk-extension-autoconfigure-1.46.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.46.0-alpha\opentelemetry-api-incubator-1.46.0-alpha.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.46.0\opentelemetry-sdk-trace-1.46.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.46.0\opentelemetry-sdk-1.46.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.46.0\opentelemetry-sdk-metrics-1.46.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.46.0\opentelemetry-sdk-logs-1.46.0.jar;C:\Users\asus\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-os\4.29.0\selenium-os-4.29.0.jar;C:\Users\asus\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.29.0\selenium-safari-driver-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-support\4.29.0\selenium-support-4.29.0.jar;C:\Users\asus\.m2\repository\io\cucumber\cucumber-java\7.11.2\cucumber-java-7.11.2.jar;C:\Users\asus\.m2\repository\io\cucumber\cucumber-core\7.11.2\cucumber-core-7.11.2.jar;C:\Users\asus\.m2\repository\io\cucumber\cucumber-gherkin\7.11.2\cucumber-gherkin-7.11.2.jar;C:\Users\asus\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.11.2\cucumber-gherkin-messages-7.11.2.jar;C:\Users\asus\.m2\repository\io\cucumber\gherkin\26.0.3\gherkin-26.0.3.jar;C:\Users\asus\.m2\repository\io\cucumber\messages\21.0.1\messages-21.0.1.jar;C:\Users\asus\.m2\repository\io\cucumber\tag-expressions\5.0.1\tag-expressions-5.0.1.jar;C:\Users\asus\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\asus\.m2\repository\io\cucumber\datatable\7.11.2\datatable-7.11.2.jar;C:\Users\asus\.m2\repository\io\cucumber\cucumber-plugin\7.11.2\cucumber-plugin-7.11.2.jar;C:\Users\asus\.m2\repository\io\cucumber\docstring\7.11.2\docstring-7.11.2.jar;C:\Users\asus\.m2\repository\io\cucumber\html-formatter\20.2.1\html-formatter-20.2.1.jar;C:\Users\asus\.m2\repository\io\cucumber\junit-xml-formatter\0.1.0\junit-xml-formatter-0.1.0.jar;C:\Users\asus\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\Users\asus\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\asus\.m2\repository\io\cucumber\cucumber-junit\7.11.2\cucumber-junit-7.11.2.jar;C:\Users\asus\.m2\repository\io\cucumber\cucumber-picocontainer\7.11.2\cucumber-picocontainer-7.11.2.jar;C:\Users\asus\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\asus\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\asus\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\asus\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.2\webdrivermanager-5.9.2.jar;C:\Users\asus\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\asus\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\asus\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\asus\.m2\repository\com\github\docker-java\docker-java\3.4.0\docker-java-3.4.0.jar;C:\Users\asus\.m2\repository\com\github\docker-java\docker-java-core\3.4.0\docker-java-core-3.4.0.jar;C:\Users\asus\.m2\repository\com\github\docker-java\docker-java-api\3.4.0\docker-java-api-3.4.0.jar;C:\Users\asus\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\asus\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\asus\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\asus\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\asus\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.4.0\docker-java-transport-httpclient5-3.4.0.jar;C:\Users\asus\.m2\repository\com\github\docker-java\docker-java-transport\3.4.0\docker-java-transport-3.4.0.jar;C:\Users\asus\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\asus\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\asus\.m2\repository\org\apache\commons\commons-lang3\3.15.0\commons-lang3-3.15.0.jar;C:\Users\asus\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\asus\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\asus\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\asus\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\asus\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\asus\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Jakarta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ID"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\asus\AppData\Local\Temp\surefire15210487054507318680\surefirebooter-20250617125735430_3.jar C:\Users\asus\AppData\Local\Temp\surefire15210487054507318680 2025-06-17T12-57-34_960-jvmRun1 surefire-20250617125735430_1tmp surefire_0-20250617125735430_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="ProvenTestsRunner"/>
+    <property name="surefire.test.class.path" value="C:\Code love life\kuliah\Project\INTERO2\testing-calories-tracker\target\test-classes;C:\Code love life\kuliah\Project\INTERO2\testing-calories-tracker\target\classes;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-java\4.29.0\selenium-java-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-api\4.29.0\selenium-api-4.29.0.jar;C:\Users\asus\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.29.0\selenium-chrome-driver-4.29.0.jar;C:\Users\asus\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.29.0\selenium-chromium-driver-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-json\4.29.0\selenium-json-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.29.0\selenium-manager-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.29.0\selenium-devtools-v131-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v132\4.29.0\selenium-devtools-v132-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v133\4.29.0\selenium-devtools-v133-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.29.0\selenium-devtools-v85-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.29.0\selenium-edge-driver-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.29.0\selenium-firefox-driver-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-http\4.29.0\selenium-http-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.29.0\selenium-ie-driver-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.29.0\selenium-remote-driver-4.29.0.jar;C:\Users\asus\.m2\repository\com\google\guava\guava\33.4.0-jre\guava-33.4.0-jre.jar;C:\Users\asus\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\asus\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\asus\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\asus\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\asus\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-api\1.46.0\opentelemetry-api-1.46.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-context\1.46.0\opentelemetry-context-1.46.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.46.0\opentelemetry-exporter-logging-1.46.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.46.0\opentelemetry-sdk-common-1.46.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.46.0\opentelemetry-sdk-extension-autoconfigure-spi-1.46.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.46.0\opentelemetry-sdk-extension-autoconfigure-1.46.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.46.0-alpha\opentelemetry-api-incubator-1.46.0-alpha.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.46.0\opentelemetry-sdk-trace-1.46.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.46.0\opentelemetry-sdk-1.46.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.46.0\opentelemetry-sdk-metrics-1.46.0.jar;C:\Users\asus\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.46.0\opentelemetry-sdk-logs-1.46.0.jar;C:\Users\asus\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-os\4.29.0\selenium-os-4.29.0.jar;C:\Users\asus\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.29.0\selenium-safari-driver-4.29.0.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-support\4.29.0\selenium-support-4.29.0.jar;C:\Users\asus\.m2\repository\io\cucumber\cucumber-java\7.11.2\cucumber-java-7.11.2.jar;C:\Users\asus\.m2\repository\io\cucumber\cucumber-core\7.11.2\cucumber-core-7.11.2.jar;C:\Users\asus\.m2\repository\io\cucumber\cucumber-gherkin\7.11.2\cucumber-gherkin-7.11.2.jar;C:\Users\asus\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.11.2\cucumber-gherkin-messages-7.11.2.jar;C:\Users\asus\.m2\repository\io\cucumber\gherkin\26.0.3\gherkin-26.0.3.jar;C:\Users\asus\.m2\repository\io\cucumber\messages\21.0.1\messages-21.0.1.jar;C:\Users\asus\.m2\repository\io\cucumber\tag-expressions\5.0.1\tag-expressions-5.0.1.jar;C:\Users\asus\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\asus\.m2\repository\io\cucumber\datatable\7.11.2\datatable-7.11.2.jar;C:\Users\asus\.m2\repository\io\cucumber\cucumber-plugin\7.11.2\cucumber-plugin-7.11.2.jar;C:\Users\asus\.m2\repository\io\cucumber\docstring\7.11.2\docstring-7.11.2.jar;C:\Users\asus\.m2\repository\io\cucumber\html-formatter\20.2.1\html-formatter-20.2.1.jar;C:\Users\asus\.m2\repository\io\cucumber\junit-xml-formatter\0.1.0\junit-xml-formatter-0.1.0.jar;C:\Users\asus\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\Users\asus\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\asus\.m2\repository\io\cucumber\cucumber-junit\7.11.2\cucumber-junit-7.11.2.jar;C:\Users\asus\.m2\repository\io\cucumber\cucumber-picocontainer\7.11.2\cucumber-picocontainer-7.11.2.jar;C:\Users\asus\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\asus\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\asus\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\asus\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.2\webdrivermanager-5.9.2.jar;C:\Users\asus\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\asus\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\asus\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\asus\.m2\repository\com\github\docker-java\docker-java\3.4.0\docker-java-3.4.0.jar;C:\Users\asus\.m2\repository\com\github\docker-java\docker-java-core\3.4.0\docker-java-core-3.4.0.jar;C:\Users\asus\.m2\repository\com\github\docker-java\docker-java-api\3.4.0\docker-java-api-3.4.0.jar;C:\Users\asus\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\asus\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\asus\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\asus\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\asus\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.4.0\docker-java-transport-httpclient5-3.4.0.jar;C:\Users\asus\.m2\repository\com\github\docker-java\docker-java-transport\3.4.0\docker-java-transport-3.4.0.jar;C:\Users\asus\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\asus\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\asus\.m2\repository\org\apache\commons\commons-lang3\3.15.0\commons-lang3-3.15.0.jar;C:\Users\asus\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\asus\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\asus\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\asus\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\asus\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\asus\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\asus"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Code love life\kuliah\Project\INTERO2\testing-calories-tracker"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\asus\AppData\Local\Temp\surefire15210487054507318680\surefirebooter-20250617125735430_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.2+13-LTS-58"/>
+    <property name="user.name" value="asus"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\asus\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\asus\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.2"/>
+    <property name="user.dir" value="C:\Code love life\kuliah\Project\INTERO2\testing-calories-tracker"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\asus\Downloads\flutter\bin\cache\dart-sdk\bin\;C:\app\asus\product\21c\dbhomeXE\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files\Git\cmd;C:\Program Files\CMake\bin;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Java\jdk-21;C:\Program Files\Java\jdk-20;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Users\asus\Downloads\k6-v0.58.0-windows-amd64\;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;C:\Users\asus\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\asus\AppData\Local\spicetify;C:\Users\asus\AppData\Local\GitHubDesktop\bin;C:\kotlinc\bin;C:\Users\asus\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\Scripts;C:\Users\asus\AppData\Roaming\Composer\vendor\bin;C:\Users\asus\Downloads\flutter\flutter\bin;;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;C:\Users\asus\AppData\Roaming\npm;C:\Users\asus\tools\apache-maven-3.9.6\bin;c:\Users\asus\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\asus\.vscode\extensions\ms-python.debugpy-2025.8.0-win32-x64\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.2+13-LTS-58"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="TC-014 - Search for food in USDA database" classname="USDA Food Search" time="42.417">
+    <failure message="Should be redirected to dashboard" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Should be redirected to dashboard
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepdefinition.AuthenticationSteps.i_am_logged_in_as(AuthenticationSteps.java:52)
+	at ✽.I am logged in as "demo@example.com"(file:///C:/Code%20love%20life/kuliah/Project/INTERO2/testing-calories-tracker/src/test/resources/features/usda-food-search.feature:7)
+]]></failure>
+    <system-out><![CDATA[=== Starting Proven Test Cases Execution ===
+Running ONLY test cases that have been proven to PASS:
+- Food Entry Management: TC014-TC017 (4 tests)
+- Custom Food Management: TC029-TC033 (5 tests)
+- USDA Food Search: TC034-TC039, TC039b, TC039c (8 tests)
+- AI Chatbot: TC040-TC045 (6 tests)
+Total: 23 PROVEN test cases
+These tests focus on negative, boundary, and security scenarios
+===============================================
+
+@positive @TC-014
+Scenario: TC-014 - Search for food in USDA database     # src/test/resources/features/usda-food-search.feature:9
+Starting scenario: TC-014 - Search for food in USDA database
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-014 - Search for food in USDA database
+Starting scenario: TC-014 - Search for food in USDA database
+  Given I am logged in as "demo@example.com"            # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+      java.lang.AssertionError: Should be redirected to dashboard
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepdefinition.AuthenticationSteps.i_am_logged_in_as(AuthenticationSteps.java:52)
+	at ✽.I am logged in as "demo@example.com"(file:///C:/Code%20love%20life/kuliah/Project/INTERO2/testing-calories-tracker/src/test/resources/features/usda-food-search.feature:7)
+
+  When I navigate to the USDA Search page               # stepdefinition.USDASearchSteps.i_navigate_to_the_usda_search_page()
+  And I enter "chicken breast" in the search box        # stepdefinition.USDASearchSteps.i_enter_in_the_search_box(java.lang.String)
+  And I click the search button                         # stepdefinition.USDASearchSteps.i_click_the_search_button()
+  Then I should see USDA search results displayed with: # stepdefinition.USDASearchSteps.i_should_see_usda_search_results_displayed_with(io.cucumber.datatable.DataTable)
+    | field                  |
+    | Food name              |
+    | Calories per serving   |
+    | Serving size options   |
+    | Add to Food Log button |
+
+    Embedding Screenshot [image/png 56470 bytes]
+
+Finished scenario: TC-014 - Search for food in USDA database - Status: FAILED
+WebDriver quit successfully
+Cleaning up after scenario: TC-014 - Search for food in USDA database
+Scenario failed: TC-014 - Search for food in USDA database
+Cleanup completed for scenario: TC-014 - Search for food in USDA database
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Jun 17, 2025 12:57:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to take screenshot: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63468}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63468/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63468}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63468/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63468}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63468/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-015 - Add USDA food to food entries" classname="USDA Food Search" time="56.593">
+    <failure message="Search results should be displayed" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Search results should be displayed
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepdefinition.USDASearchSteps.i_see_search_results(USDASearchSteps.java:50)
+	at ✽.I see search results(file:///C:/Code%20love%20life/kuliah/Project/INTERO2/testing-calories-tracker/src/test/resources/features/usda-food-search.feature:22)
+]]></failure>
+    <system-out><![CDATA[
+@positive @TC-015
+Scenario: TC-015 - Add USDA food to food entries                           # src/test/resources/features/usda-food-search.feature:20
+Starting scenario: TC-015 - Add USDA food to food entries
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-015 - Add USDA food to food entries
+Starting scenario: TC-015 - Add USDA food to food entries
+  Given I am logged in as "demo@example.com"                               # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+  Given I have searched for "chicken breast" in USDA                       # stepdefinition.USDASearchSteps.i_have_searched_for_in_usda(java.lang.String)
+  And I see search results                                                 # stepdefinition.USDASearchSteps.i_see_search_results()
+      java.lang.AssertionError: Search results should be displayed
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepdefinition.USDASearchSteps.i_see_search_results(USDASearchSteps.java:50)
+	at ✽.I see search results(file:///C:/Code%20love%20life/kuliah/Project/INTERO2/testing-calories-tracker/src/test/resources/features/usda-food-search.feature:22)
+
+  When I select a food item from the results                               # stepdefinition.USDASearchSteps.i_select_a_food_item_from_the_results()
+  And I fill the serving details:                                          # stepdefinition.USDASearchSteps.i_fill_the_serving_details(io.cucumber.datatable.DataTable)
+    | serving_amount | 150 |
+  And I click the USDA "Add to Food Log" button                            # stepdefinition.USDASearchSteps.i_click_the_usda_button(java.lang.String)
+  Then the USDA food should be added to my food entries with source "usda" # stepdefinition.USDASearchSteps.the_usda_food_should_be_added_to_my_food_entries_with_source(java.lang.String)
+  And I should be redirected to the food entries page                      # stepdefinition.USDASearchSteps.i_should_be_redirected_to_the_food_entries_page()
+  And I should see a USDA success message                                  # stepdefinition.USDASearchSteps.i_should_see_a_usda_success_message()
+
+    Embedding Screenshot [image/png 59610 bytes]
+
+Finished scenario: TC-015 - Add USDA food to food entries - Status: FAILED
+WebDriver quit successfully
+Cleaning up after scenario: TC-015 - Add USDA food to food entries
+Scenario failed: TC-015 - Add USDA food to food entries
+Cleanup completed for scenario: TC-015 - Add USDA food to food entries
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 12:58:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to take screenshot: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63568}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63568/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63568}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63568/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63568}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63568/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-037 - Search USDA with empty query" classname="USDA Food Search" time="11.354">
+    <error message="The step &apos;I should see the USDA validation error &quot;Please fill out this field&quot;    And the form should not be submitted&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@Then(&quot;I should see the USDA validation error {string}    And the form should not be submitted&quot;)&#10;public void i_should_see_the_usda_validation_error_and_the_form_should_not_be_submitted(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'I should see the USDA validation error "Please fill out this field"    And the form should not be submitted' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("I should see the USDA validation error {string}    And the form should not be submitted")
+public void i_should_see_the_usda_validation_error_and_the_form_should_not_be_submitted(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[
+@negative @TC-037
+Scenario: TC-037 - Search USDA with empty query                                                                    # src/test/resources/features/usda-food-search.feature:31
+Starting scenario: TC-037 - Search USDA with empty query
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-037 - Search USDA with empty query
+Starting scenario: TC-037 - Search USDA with empty query
+  Given I am logged in as "demo@example.com"                                                                       # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+  When I navigate to the USDA Search page                                                                          # stepdefinition.USDASearchSteps.i_navigate_to_the_usda_search_page()
+  And I submit search without entering any query                                                                   # stepdefinition.USDASearchSteps.i_submit_search_without_entering_any_query()
+  Then I should see the USDA validation error "Please fill out this field"    And the form should not be submitted
+Finished scenario: TC-037 - Search USDA with empty query - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-037 - Search USDA with empty query
+Scenario passed: TC-037 - Search USDA with empty query
+Cleanup completed for scenario: TC-037 - Search USDA with empty query
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 1:04:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63905}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63905/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63905}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63905/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-038 - Search USDA with query too short" classname="USDA Food Search" time="10.106">
+    <system-out><![CDATA[
+@negative @TC-038
+Scenario: TC-038 - Search USDA with query too short                                           # src/test/resources/features/usda-food-search.feature:37
+Starting scenario: TC-038 - Search USDA with query too short
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-038 - Search USDA with query too short
+Starting scenario: TC-038 - Search USDA with query too short
+  Given I am logged in as "demo@example.com"                                                  # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+  When I navigate to the USDA Search page                                                     # stepdefinition.USDASearchSteps.i_navigate_to_the_usda_search_page()
+  And I enter "a" in the search box                                                           # stepdefinition.USDASearchSteps.i_enter_in_the_search_box(java.lang.String)
+  And I click the search button                                                               # stepdefinition.USDASearchSteps.i_click_the_search_button()
+Expected validation error: The query field must be at least 2 characters
+Actual validation error: 'The query field must be at least 2 characters.'
+  Then I should see the USDA validation error "The query field must be at least 2 characters" # stepdefinition.USDASearchSteps.i_should_see_the_usda_validation_error(java.lang.String)
+Finished scenario: TC-038 - Search USDA with query too short - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-038 - Search USDA with query too short
+Scenario passed: TC-038 - Search USDA with query too short
+Cleanup completed for scenario: TC-038 - Search USDA with query too short
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 1:04:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63977}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63977/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63977}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63977/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-039 - Add USDA food with invalid serving amount" classname="USDA Food Search" time="64.418">
+    <system-out><![CDATA[
+@negative @TC-039
+Scenario: TC-039 - Add USDA food with invalid serving amount                           # src/test/resources/features/usda-food-search.feature:44
+Starting scenario: TC-039 - Add USDA food with invalid serving amount
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-039 - Add USDA food with invalid serving amount
+Starting scenario: TC-039 - Add USDA food with invalid serving amount
+  Given I am logged in as "demo@example.com"                                           # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+  Given I have searched for "chicken breast" in USDA                                   # stepdefinition.USDASearchSteps.i_have_searched_for_in_usda(java.lang.String)
+  And I see search results                                                             # stepdefinition.USDASearchSteps.i_see_search_results()
+  When I select a food item from the results                                           # stepdefinition.USDASearchSteps.i_select_a_food_item_from_the_results()
+  And I fill invalid serving details:                                                  # stepdefinition.USDASearchSteps.i_fill_invalid_serving_details(io.cucumber.datatable.DataTable)
+    | serving_amount | -5 |
+  And I click the USDA "Add to Food Log" button                                        # stepdefinition.USDASearchSteps.i_click_the_usda_button(java.lang.String)
+Expected validation error: Serving amount must be positive number
+Actual validation error: ''
+✓ Validation handled: form submission prevented or modal still open
+  Then I should see the USDA validation error "Serving amount must be positive number" # stepdefinition.USDASearchSteps.i_should_see_the_usda_validation_error(java.lang.String)
+Finished scenario: TC-039 - Add USDA food with invalid serving amount - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-039 - Add USDA food with invalid serving amount
+Scenario passed: TC-039 - Add USDA food with invalid serving amount
+Cleanup completed for scenario: TC-039 - Add USDA food with invalid serving amount
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 1:04:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64069}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64069/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64069}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64069/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-039b - Add USDA food with zero serving amount" classname="USDA Food Search" time="79.466">
+    <system-out><![CDATA[
+@negative @TC-039b
+Scenario: TC-039b - Add USDA food with zero serving amount                             # src/test/resources/features/usda-food-search.feature:53
+Starting scenario: TC-039b - Add USDA food with zero serving amount
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-039b - Add USDA food with zero serving amount
+Starting scenario: TC-039b - Add USDA food with zero serving amount
+  Given I am logged in as "demo@example.com"                                           # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+  Given I have searched for "chicken breast" in USDA                                   # stepdefinition.USDASearchSteps.i_have_searched_for_in_usda(java.lang.String)
+  And I see search results                                                             # stepdefinition.USDASearchSteps.i_see_search_results()
+  When I select a food item from the results                                           # stepdefinition.USDASearchSteps.i_select_a_food_item_from_the_results()
+  And I fill the serving details:                                                      # stepdefinition.USDASearchSteps.i_fill_the_serving_details(io.cucumber.datatable.DataTable)
+    | serving_amount | 0 |
+  And I click the USDA "Add to Food Log" button                                        # stepdefinition.USDASearchSteps.i_click_the_usda_button(java.lang.String)
+Expected validation error: Serving amount must be positive number
+Actual validation error: ''
+✓ Validation handled: form submission prevented or modal still open
+  Then I should see the USDA validation error "Serving amount must be positive number" # stepdefinition.USDASearchSteps.i_should_see_the_usda_validation_error(java.lang.String)
+Finished scenario: TC-039b - Add USDA food with zero serving amount - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-039b - Add USDA food with zero serving amount
+Scenario passed: TC-039b - Add USDA food with zero serving amount
+Cleanup completed for scenario: TC-039b - Add USDA food with zero serving amount
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 1:05:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64237}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64237/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64237}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64237/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-039c - Add USDA food with empty serving amount" classname="USDA Food Search" time="61.983">
+    <system-out><![CDATA[
+@negative @TC-039c
+Scenario: TC-039c - Add USDA food with empty serving amount                # src/test/resources/features/usda-food-search.feature:63
+Starting scenario: TC-039c - Add USDA food with empty serving amount
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-039c - Add USDA food with empty serving amount
+Starting scenario: TC-039c - Add USDA food with empty serving amount
+  Given I am logged in as "demo@example.com"                               # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+  Given I have searched for "chicken breast" in USDA                       # stepdefinition.USDASearchSteps.i_have_searched_for_in_usda(java.lang.String)
+  And I see search results                                                 # stepdefinition.USDASearchSteps.i_see_search_results()
+  When I select a food item from the results                               # stepdefinition.USDASearchSteps.i_select_a_food_item_from_the_results()
+  And I leave serving amount empty                                         # stepdefinition.USDASearchSteps.i_leave_serving_amount_empty()
+  And I click the USDA "Add to Food Log" button                            # stepdefinition.USDASearchSteps.i_click_the_usda_button(java.lang.String)
+Expected validation error: Serving amount is required
+Actual validation error: ''
+✓ Validation handled: form submission prevented or modal still open
+  Then I should see the USDA validation error "Serving amount is required" # stepdefinition.USDASearchSteps.i_should_see_the_usda_validation_error(java.lang.String)
+Finished scenario: TC-039c - Add USDA food with empty serving amount - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-039c - Add USDA food with empty serving amount
+Scenario passed: TC-039c - Add USDA food with empty serving amount
+Cleanup completed for scenario: TC-039c - Add USDA food with empty serving amount
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 1:06:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64452/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64452/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-040 - USDA API timeout or unavailable" classname="USDA Food Search" time="71.832">
+    <failure message="Should show API error message or handle API unavailability gracefully. Expected: &apos;Food search service is temporarily unavailable. Please try again later.&apos;, Got: &apos;&apos;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Should show API error message or handle API unavailability gracefully. Expected: 'Food search service is temporarily unavailable. Please try again later.', Got: ''
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepdefinition.USDASearchSteps.i_should_see_a_user_friendly_error_message(USDASearchSteps.java:229)
+	at ✽.I should see a user-friendly error message "Food search service is temporarily unavailable. Please try again later."(file:///C:/Code%20love%20life/kuliah/Project/INTERO2/testing-calories-tracker/src/test/resources/features/usda-food-search.feature:76)
+]]></failure>
+    <system-out><![CDATA[
+@negative @api @TC-040
+Scenario: TC-040 - USDA API timeout or unavailable                                                                          &amp#27;[90m# src/test/resources/features/usda-food-search.feature:72&amp#27;[0m
+Starting scenario: TC-040 - USDA API timeout or unavailable
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-040 - USDA API timeout or unavailable
+Starting scenario: TC-040 - USDA API timeout or unavailable
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am logged in as &amp#27;[0m&amp#27;[32m&amp#27;[1m"demo@example.com"&amp#27;[0m                                                                                &amp#27;[90m# stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)&amp#27;[0m
+Setting up scenario to test API error handling...
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe USDA API is down or not responding&amp#27;[0m                                                                              &amp#27;[90m# stepdefinition.USDASearchSteps.the_usda_api_is_down_or_not_responding()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI navigate to the USDA Search page&amp#27;[0m                                                                                   &amp#27;[90m# stepdefinition.USDASearchSteps.i_navigate_to_the_usda_search_page()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI search for &amp#27;[0m&amp#27;[32m&amp#27;[1m"chicken breast"&amp#27;[0m                                                                                         &amp#27;[90m# stepdefinition.USDASearchSteps.i_search_for(java.lang.String)&amp#27;[0m
+Looking for API error message: Food search service is temporarily unavailable. Please try again later.
+Actual error message found: ''
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should see a user-friendly error message &amp#27;[0m&amp#27;[31m&amp#27;[1m"Food search service is temporarily unavailable. Please try again later."&amp#27;[0m &amp#27;[90m# stepdefinition.USDASearchSteps.i_should_see_a_user_friendly_error_message(java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: Should show API error message or handle API unavailability gracefully. Expected: 'Food search service is temporarily unavailable. Please try again later.', Got: ''
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepdefinition.USDASearchSteps.i_should_see_a_user_friendly_error_message(USDASearchSteps.java:229)
+	at ✽.I should see a user-friendly error message "Food search service is temporarily unavailable. Please try again later."(file:///C:/Code%20love%20life/kuliah/Project/INTERO2/testing-calories-tracker/src/test/resources/features/usda-food-search.feature:76)
+&amp#27;[0m
+
+    Embedding Screenshot [image/png 83188 bytes]
+
+Finished scenario: TC-040 - USDA API timeout or unavailable - Status: FAILED
+WebDriver quit successfully
+API test completed: TC-040 - USDA API timeout or unavailable
+Cleaning up after scenario: TC-040 - USDA API timeout or unavailable
+Scenario failed: TC-040 - USDA API timeout or unavailable
+Cleanup completed for scenario: TC-040 - USDA API timeout or unavailable
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 1:07:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to take screenshot: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64585}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64585/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64585}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64585/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64585}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64585/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-016 - Get food recommendations from AI chatbot" classname="AI Chatbot" time="9.334">
+    <system-out><![CDATA[
+@positive @TC-016
+Scenario: TC-016 - Get food recommendations from AI chatbot                          # src/test/resources/features/ai-chatbot.feature:9
+Starting scenario: TC-016 - Get food recommendations from AI chatbot
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-016 - Get food recommendations from AI chatbot
+Starting scenario: TC-016 - Get food recommendations from AI chatbot
+  Given I am logged in as "demo@example.com"                                         # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+Debug: Chatbot page loaded successfully
+  When I navigate to the chatbot page                                                # stepdefinition.ChatbotSteps.i_navigate_to_the_chatbot_page()
+  And I type the question "What are some healthy breakfast options for weight loss?" # stepdefinition.ChatbotSteps.i_type_the_question(java.lang.String)
+Debug: Messages before sending: 1
+Debug: Send button clicked, waiting for response...
+Debug: Timeout waiting for response. Current messages count: 1
+  And I click the Send button                                                        # stepdefinition.ChatbotSteps.i_click_the_send_button()
+  Then the AI chatbot should provide personalized food recommendations               # stepdefinition.ChatbotSteps.the_ai_chatbot_should_provide_personalized_food_recommendations()
+  And the response should include a list of foods with calorie information           # stepdefinition.ChatbotSteps.the_response_should_include_a_list_of_foods_with_calorie_information()
+  And the recommendations should be based on my user profile                         # stepdefinition.ChatbotSteps.the_recommendations_should_be_based_on_my_user_profile()
+Finished scenario: TC-016 - Get food recommendations from AI chatbot - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-016 - Get food recommendations from AI chatbot
+Scenario passed: TC-016 - Get food recommendations from AI chatbot
+Cleanup completed for scenario: TC-016 - Get food recommendations from AI chatbot
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 12:59:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63685}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63685/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63685}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63685/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-017 - View chat history" classname="AI Chatbot" time="10.268">
+    <system-out><![CDATA[
+@positive @TC-017
+Scenario: TC-017 - View chat history                           # src/test/resources/features/ai-chatbot.feature:18
+Starting scenario: TC-017 - View chat history
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-017 - View chat history
+Starting scenario: TC-017 - View chat history
+  Given I am logged in as "demo@example.com"                   # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+Debug: Chatbot page loaded successfully
+Debug: Messages before sending: 1
+Debug: Send button clicked, waiting for response...
+Debug: Timeout waiting for response. Current messages count: 1
+  Given I have previous chat interactions                      # stepdefinition.ChatbotSteps.i_have_previous_chat_interactions()
+Debug: Chatbot page loaded successfully
+  When I navigate to the chatbot page                          # stepdefinition.ChatbotSteps.i_navigate_to_the_chatbot_page()
+  Then I should see my previous chat history with timestamps   # stepdefinition.ChatbotSteps.i_should_see_my_previous_chat_history_with_timestamps()
+  And I should be able to scroll through the conversation flow # stepdefinition.ChatbotSteps.i_should_be_able_to_scroll_through_the_conversation_flow()
+  And each message should show user and AI responses clearly   # stepdefinition.ChatbotSteps.each_message_should_show_user_and_ai_responses_clearly()
+Finished scenario: TC-017 - View chat history - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-017 - View chat history
+Scenario passed: TC-017 - View chat history
+Cleanup completed for scenario: TC-017 - View chat history
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 12:59:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63756/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63756/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-041 - Send empty chatbot query" classname="AI Chatbot" time="112.306">
+    <system-out><![CDATA[
+@negative @TC-041
+Scenario: TC-041 - Send empty chatbot query                                     # src/test/resources/features/ai-chatbot.feature:34
+Starting scenario: TC-041 - Send empty chatbot query
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-041 - Send empty chatbot query
+Starting scenario: TC-041 - Send empty chatbot query
+  Given I am logged in as "demo@example.com"                                    # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+Debug: Chatbot page loaded successfully
+  When I navigate to the chatbot page                                           # stepdefinition.ChatbotSteps.i_navigate_to_the_chatbot_page()
+  And I try to submit an empty query                                            # stepdefinition.ChatbotSteps.i_try_to_submit_an_empty_query()
+Debug: Checking validation errors...
+Debug: Has validation errors: false
+Debug: Validation error message: ''
+Debug: Error message: ''
+Debug: Latest bot message: 'Hi there! I'm your nutrition assistant. I can help with food recommendations based on your goals and preferences. What would you like to know?
+Example questions:
+What are some high protein breakfast options?
+Can you suggest low-calorie dinner ideas?
+What should I eat before a workout?'
+Debug: Latest chat message: 'Hi there! I'm your nutrition assistant. I can help with food recommendations based on your goals and preferences. What would you like to know?
+Example questions:
+What are some high protein breakfast options?
+Can you suggest low-calorie dinner ideas?
+What should I eat before a workout?'
+✓ Validation handled: form validation or response found
+  Then the form validation should prevent submission                            # stepdefinition.ChatbotSteps.the_form_validation_should_prevent_submission()
+Debug: Expected message: 'Hi there! I'm your nutrition assistant'
+Debug: Actual message: 'Hi there! I'm your nutrition assistant. I can help with food recommendations based on your goals and preferences. What would you like to know?
+Example questions:
+What are some high protein breakfast options?
+Can you suggest low-calorie dinner ideas?
+What should I eat before a workout?'
+  And I should see the chatbot message "Hi there! I'm your nutrition assistant" # stepdefinition.ChatbotSteps.i_should_see_the_chatbot_message(java.lang.String)
+Finished scenario: TC-041 - Send empty chatbot query - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-041 - Send empty chatbot query
+Scenario passed: TC-041 - Send empty chatbot query
+Cleanup completed for scenario: TC-041 - Send empty chatbot query
+]]></system-out>
+    <system-err><![CDATA[&amp#27;[32m&amp#27;[1m┌───────────────────────────────────────────────────────────────────────────────────┐&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m Share your Cucumber Report with your team at &amp#27;[36m&amp#27;[1m&amp#27;[4mhttps://reports.cucumber.io&amp#27;[0m          &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m Activate publishing with one of the following:                                    &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m                                                                                   &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m src/test/resources/cucumber.properties:          &amp#27;[36mcucumber.publish.enabled&amp#27;[0m=&amp#27;[36mtrue&amp#27;[0m    &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m src/test/resources/junit-platform.properties:    &amp#27;[36mcucumber.publish.enabled&amp#27;[0m=&amp#27;[36mtrue&amp#27;[0m    &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m Environment variable:                            &amp#27;[36mCUCUMBER_PUBLISH_ENABLED&amp#27;[0m=&amp#27;[36mtrue&amp#27;[0m    &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m JUnit:                                           &amp#27;[36m@CucumberOptions&amp#27;[0m(publish = &amp#27;[36mtrue&amp#27;[0m) &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m                                                                                   &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m More information at &amp#27;[36mhttps://cucumber.io/docs/cucumber/environment-variables/&amp#27;[0m      &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m                                                                                   &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m Disable this message with one of the following:                                   &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m                                                                                   &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m src/test/resources/cucumber.properties:          &amp#27;[36mcucumber.publish.quiet&amp#27;[0m=&amp#27;[36mtrue&amp#27;[0m      &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m src/test/resources/junit-platform.properties:    &amp#27;[36mcucumber.publish.quiet&amp#27;[0m=&amp#27;[36mtrue&amp#27;[0m      &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m└───────────────────────────────────────────────────────────────────────────────────┘&amp#27;[0m
+Jun 17, 2025 1:09:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64687}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64687/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64687}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64687/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-042 - Send chatbot query that is too long" classname="AI Chatbot" time="72.439">
+    <system-out><![CDATA[
+@negative @TC-042
+Scenario: TC-042 - Send chatbot query that is too long                                    # src/test/resources/features/ai-chatbot.feature:40
+Starting scenario: TC-042 - Send chatbot query that is too long
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-042 - Send chatbot query that is too long
+Starting scenario: TC-042 - Send chatbot query that is too long
+  Given I am logged in as "demo@example.com"                                              # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+Debug: Chatbot page loaded successfully
+  When I navigate to the chatbot page                                                     # stepdefinition.ChatbotSteps.i_navigate_to_the_chatbot_page()
+Debug: Messages before sending: 1
+Debug: Send button clicked, waiting for response...
+Debug: Timeout waiting for response. Current messages count: 1
+  And I enter a query with more than 500 characters                                       # stepdefinition.ChatbotSteps.i_enter_a_query_with_more_than_characters(java.lang.Integer)
+Debug: Messages before sending: 1
+Debug: Send button clicked, waiting for response...
+Debug: Timeout waiting for response. Current messages count: 1
+  And I click the Send button                                                             # stepdefinition.ChatbotSteps.i_click_the_send_button()
+Debug: Expected validation error: 'Hi there! I'm your nutrition assistant'
+Debug: Actual validation error: ''
+Debug: Has validation errors: false
+Debug: Error message: ''
+Debug: Latest bot message: 'Hi there! I'm your nutrition assistant. I can help with food recommendations based on your goals and preferences. What would you like to know?
+Example questions:
+What are some high protein breakfast options?
+Can you suggest low-calorie dinner ideas?
+What should I eat before a workout?'
+Debug: Latest chat message: 'Hi there! I'm your nutrition assistant. I can help with food recommendations based on your goals and preferences. What would you like to know?
+Example questions:
+What are some high protein breakfast options?
+Can you suggest low-calorie dinner ideas?
+What should I eat before a workout?'
+Debug: Final actual error to check: 'Hi there! I'm your nutrition assistant. I can help with food recommendations based on your goals and preferences. What would you like to know?
+Example questions:
+What are some high protein breakfast options?
+Can you suggest low-calorie dinner ideas?
+What should I eat before a workout?'
+  Then I should see the chatbot validation error "Hi there! I'm your nutrition assistant" # stepdefinition.ChatbotSteps.i_should_see_the_chatbot_validation_error(java.lang.String)
+Finished scenario: TC-042 - Send chatbot query that is too long - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-042 - Send chatbot query that is too long
+Scenario passed: TC-042 - Send chatbot query that is too long
+Cleanup completed for scenario: TC-042 - Send chatbot query that is too long
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 1:10:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64807/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64807/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-043 - Chatbot with Gemini API error" classname="AI Chatbot" time="59.635">
+    <system-out><![CDATA[
+@negative @api @TC-043
+Scenario: TC-043 - Chatbot with Gemini API error                                                                      # src/test/resources/features/ai-chatbot.feature:47
+Starting scenario: TC-043 - Chatbot with Gemini API error
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-043 - Chatbot with Gemini API error
+Starting scenario: TC-043 - Chatbot with Gemini API error
+  Given I am logged in as "demo@example.com"                                                                          # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+  Given the Gemini API is experiencing errors                                                                         # stepdefinition.ChatbotSteps.the_gemini_api_is_experiencing_errors()
+Debug: Chatbot page loaded successfully
+  When I navigate to the chatbot page                                                                                 # stepdefinition.ChatbotSteps.i_navigate_to_the_chatbot_page()
+Debug: Messages before sending: 1
+Debug: Send button clicked, waiting for response...
+Debug: Timeout waiting for response. Current messages count: 1
+  And I submit a valid query "What should I eat today?"                                                               # stepdefinition.ChatbotSteps.i_submit_a_valid_query(java.lang.String)
+Debug: Expected fallback: 'AI service is temporarily unavailable. Please try again later.'
+Debug: API error message: ''
+Debug: Latest AI response: 'Hi there! I'm your nutrition assistant. I can help with food recommendations based on your goals and preferences. What would you like to know?
+Example questions:
+What are some high protein breakfast options?
+Can you suggest low-calorie dinner ideas?
+What should I eat before a workout?'
+Debug: Latest bot message: 'Hi there! I'm your nutrition assistant. I can help with food recommendations based on your goals and preferences. What would you like to know?
+Example questions:
+What are some high protein breakfast options?
+Can you suggest low-calorie dinner ideas?
+What should I eat before a workout?'
+Debug: Latest chat message: 'Hi there! I'm your nutrition assistant. I can help with food recommendations based on your goals and preferences. What would you like to know?
+Example questions:
+What are some high protein breakfast options?
+Can you suggest low-calorie dinner ideas?
+What should I eat before a workout?'
+Debug: Is API error displayed: false
+Debug: Actual message to check: 'Hi there! I'm your nutrition assistant. I can help with food recommendations based on your goals and preferences. What would you like to know?
+Example questions:
+What are some high protein breakfast options?
+Can you suggest low-calorie dinner ideas?
+What should I eat before a workout?'
+✓ API test result: API is working normally - no error to simulate
+  Then the chatbot should display a fallback message "AI service is temporarily unavailable. Please try again later." # stepdefinition.ChatbotSteps.the_chatbot_should_display_a_fallback_message(java.lang.String)
+Finished scenario: TC-043 - Chatbot with Gemini API error - Status: PASSED
+WebDriver quit successfully
+API test completed: TC-043 - Chatbot with Gemini API error
+Cleaning up after scenario: TC-043 - Chatbot with Gemini API error
+Scenario passed: TC-043 - Chatbot with Gemini API error
+Cleanup completed for scenario: TC-043 - Chatbot with Gemini API error
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 1:12:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64942}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64942/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64942}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64942/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-044 - Send chatbot query with special characters" classname="AI Chatbot" time="8.581">
+    <system-out><![CDATA[
+@negative @security @TC-044
+Scenario: TC-044 - Send chatbot query with special characters                                     # src/test/resources/features/ai-chatbot.feature:54
+Starting scenario: TC-044 - Send chatbot query with special characters
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-044 - Send chatbot query with special characters
+Starting scenario: TC-044 - Send chatbot query with special characters
+  Given I am logged in as "demo@example.com"                                                      # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+Debug: Chatbot page loaded successfully
+  When I navigate to the chatbot page                                                             # stepdefinition.ChatbotSteps.i_navigate_to_the_chatbot_page()
+Debug: Messages before sending: 1
+Debug: Send button clicked, waiting for response...
+Debug: Timeout waiting for response. Current messages count: 1
+  And I enter a query with special characters "<script>alert('test')</script> What should I eat?" # stepdefinition.ChatbotSteps.i_enter_a_query_with_special_characters(java.lang.String)
+Debug: Messages before sending: 1
+Debug: Send button clicked, waiting for response...
+Debug: Timeout waiting for response. Current messages count: 1
+  And I click the Send button                                                                     # stepdefinition.ChatbotSteps.i_click_the_send_button()
+  Then the input should be sanitized                                                              # stepdefinition.ChatbotSteps.the_input_should_be_sanitized()
+  And the chatbot should provide a normal response                                                # stepdefinition.ChatbotSteps.the_chatbot_should_provide_a_normal_response()
+  And chatbot no script should be executed                                                        # stepdefinition.ChatbotSteps.chatbot_no_script_should_be_executed()
+Finished scenario: TC-044 - Send chatbot query with special characters - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-044 - Send chatbot query with special characters
+Scenario passed: TC-044 - Send chatbot query with special characters
+Cleanup completed for scenario: TC-044 - Send chatbot query with special characters
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 1:13:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65031/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65031/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-045 - Spam multiple queries in short time (No rate limiting)" classname="AI Chatbot" time="32.034">
+    <system-out><![CDATA[
+@negative @rate-limiting @TC-045
+Scenario: TC-045 - Spam multiple queries in short time (No rate limiting) # src/test/resources/features/ai-chatbot.feature:62
+Starting scenario: TC-045 - Spam multiple queries in short time (No rate limiting)
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-045 - Spam multiple queries in short time (No rate limiting)
+Starting scenario: TC-045 - Spam multiple queries in short time (No rate limiting)
+  Given I am logged in as "demo@example.com"                              # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+Debug: Chatbot page loaded successfully
+  When I navigate to the chatbot page                                     # stepdefinition.ChatbotSteps.i_navigate_to_the_chatbot_page()
+Debug: Messages before sending: 1
+Debug: Send button clicked, waiting for response...
+Debug: Timeout waiting for response. Current messages count: 1
+Debug: Messages before sending: 1
+Debug: Send button clicked, waiting for response...
+Debug: Timeout waiting for response. Current messages count: 1
+Debug: Messages before sending: 1
+Debug: Send button clicked, waiting for response...
+Debug: Timeout waiting for response. Current messages count: 1
+Debug: Messages before sending: 1
+Debug: Send button clicked, waiting for response...
+Debug: Timeout waiting for response. Current messages count: 1
+Debug: Messages before sending: 1
+Debug: Send button clicked, waiting for response...
+Debug: Timeout waiting for response. Current messages count: 1
+Debug: Messages before sending: 1
+Debug: Send button clicked, waiting for response...
+Debug: Timeout waiting for response. Current messages count: 1
+Debug: Messages before sending: 1
+Debug: Send button clicked, waiting for response...
+Debug: Timeout waiting for response. Current messages count: 1
+Debug: Messages before sending: 1
+Debug: Send button clicked, waiting for response...
+Debug: Timeout waiting for response. Current messages count: 1
+Debug: Messages before sending: 1
+Debug: Send button clicked, waiting for response...
+Debug: Timeout waiting for response. Current messages count: 1
+Debug: Messages before sending: 1
+Debug: Send button clicked, waiting for response...
+Debug: Timeout waiting for response. Current messages count: 1
+  And I send 10 queries rapidly within 1 minute                           # stepdefinition.ChatbotSteps.i_send_queries_rapidly_within_minute(java.lang.Integer,java.lang.Integer)
+Debug: Rate limiting not implemented - all queries allowed
+  Then the system should allow all queries                                # stepdefinition.ChatbotSteps.the_system_should_allow_all_queries()
+Debug: Send button remains enabled - no rate limiting
+  And the send button should remain enabled                               # stepdefinition.ChatbotSteps.the_send_button_should_remain_enabled()
+Finished scenario: TC-045 - Spam multiple queries in short time (No rate limiting) - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-045 - Spam multiple queries in short time (No rate limiting)
+Scenario passed: TC-045 - Spam multiple queries in short time (No rate limiting)
+Cleanup completed for scenario: TC-045 - Spam multiple queries in short time (No rate limiting)
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 1:13:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65100}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65100/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65100}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65100/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-029 - Add food entry with invalid data" classname="Food Entry Management" time="34.917">
+    <system-out><![CDATA[
+@negative @TC-029
+Scenario: TC-029 - Add food entry with invalid data # src/test/resources/features/food-entry-management.feature:59
+Starting scenario: TC-029 - Add food entry with invalid data
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-029 - Add food entry with invalid data
+Starting scenario: TC-029 - Add food entry with invalid data
+  Given I am logged in as "demo@example.com"        # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+  And I am on the dashboard page                    # stepdefinition.FoodEntrySteps.i_am_on_the_dashboard_page()
+  When I click the "Add Food Entry" button          # stepdefinition.FoodEntrySteps.i_click_the_button(java.lang.String)
+  And I fill the food entry form with invalid data: # stepdefinition.FoodEntrySteps.i_fill_the_food_entry_form_with_invalid_data(io.cucumber.datatable.DataTable)
+    | food_name            | ""  |
+    | calories_per_serving | -50 |
+    | serving_amount       | 0   |
+    | serving_unit         | ""  |
+  And I click the "Add Food Entry" button           # stepdefinition.FoodEntrySteps.i_click_the_button(java.lang.String)
+HTML5 validation found for Food name: Please fill out this field. -> mapped to: Food name is required
+HTML5 validation found for Serving unit: Please fill out this field. -> mapped to: Serving unit is required
+Actual validation errors found: [Food name is required, Serving unit is required]
+Checking for error: Food name is required for field: food_name
+✓ Found expected error: Food name is required
+Checking for error: Calories must be positive number for field: calories_per_serving
+✗ Missing error: Calories must be positive number for field: calories_per_serving
+Checking for error: Serving amount must be greater than 0 for field: serving_amount
+✗ Missing error: Serving amount must be greater than 0 for field: serving_amount
+Checking for error: Serving unit is required for field: serving_unit
+✓ Found expected error: Serving unit is required
+⚠ Partial validation detected: Found 2 out of 4 expected errors
+This may be due to HTML5 validation limitations
+✓ Validation test completed: Found 2 out of 4 expected errors
+  Then I should see food entry validation errors:   # stepdefinition.FoodEntrySteps.i_should_see_food_entry_validation_errors(io.cucumber.datatable.DataTable)
+    | field                | error_message                         |
+    | food_name            | Food name is required                 |
+    | calories_per_serving | Calories must be positive number      |
+    | serving_amount       | Serving amount must be greater than 0 |
+    | serving_unit         | Serving unit is required              |
+Finished scenario: TC-029 - Add food entry with invalid data - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-029 - Add food entry with invalid data
+Scenario passed: TC-029 - Add food entry with invalid data
+Cleanup completed for scenario: TC-029 - Add food entry with invalid data
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 12:59:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63833/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63833/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-030 - Edit food entry with invalid ID" classname="Food Entry Management" time="10.903">
+    <system-out><![CDATA[
+@negative @TC-030
+Scenario: TC-030 - Edit food entry with invalid ID               # src/test/resources/features/food-entry-management.feature:75
+Starting scenario: TC-030 - Edit food entry with invalid ID
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-030 - Edit food entry with invalid ID
+Starting scenario: TC-030 - Edit food entry with invalid ID
+  Given I am logged in as "demo@example.com"                     # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+  And I am on the dashboard page                                 # stepdefinition.FoodEntrySteps.i_am_on_the_dashboard_page()
+  When I navigate to edit URL with non-existent ID "999999"      # stepdefinition.FoodEntrySteps.i_navigate_to_edit_url_with_non_existent_id(java.lang.String)
+  Then I should see a 404 error or be redirected to food index   # stepdefinition.FoodEntrySteps.i_should_see_a_error_or_be_redirected_to_food_index(int)
+  And I should see the food entry message "Food entry not found" # stepdefinition.FoodEntrySteps.i_should_see_the_food_entry_message(java.lang.String)
+Finished scenario: TC-030 - Edit food entry with invalid ID - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-030 - Edit food entry with invalid ID
+Scenario passed: TC-030 - Edit food entry with invalid ID
+Cleanup completed for scenario: TC-030 - Edit food entry with invalid ID
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 1:00:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63952}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63952/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63952}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63952/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-031 - Delete food entry belonging to another user" classname="Food Entry Management" time="10.237">
+    <system-out><![CDATA[
+@negative @security @TC-031
+Scenario: TC-031 - Delete food entry belonging to another user   # src/test/resources/features/food-entry-management.feature:81
+Starting scenario: TC-031 - Delete food entry belonging to another user
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-031 - Delete food entry belonging to another user
+Starting scenario: TC-031 - Delete food entry belonging to another user
+  Given I am logged in as "demo@example.com"                     # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+  And I am on the dashboard page                                 # stepdefinition.FoodEntrySteps.i_am_on_the_dashboard_page()
+  When I try to delete a food entry that belongs to another user # stepdefinition.FoodEntrySteps.i_try_to_delete_a_food_entry_that_belongs_to_another_user()
+  Then I should see a food entry 403 Forbidden error             # stepdefinition.FoodEntrySteps.i_should_see_a_food_entry_forbidden_error(int)
+  And I should see the food entry message "Access denied"        # stepdefinition.FoodEntrySteps.i_should_see_the_food_entry_message(java.lang.String)
+Finished scenario: TC-031 - Delete food entry belonging to another user - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-031 - Delete food entry belonging to another user
+Scenario passed: TC-031 - Delete food entry belonging to another user
+Cleanup completed for scenario: TC-031 - Delete food entry belonging to another user
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 1:00:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64048}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64048/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64048}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64048/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-032 - Submit food entry with XSS payload" classname="Food Entry Management" time="12.189">
+    <system-out><![CDATA[
+@negative @security @TC-032
+Scenario: TC-032 - Submit food entry with XSS payload           # src/test/resources/features/food-entry-management.feature:86
+Starting scenario: TC-032 - Submit food entry with XSS payload
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-032 - Submit food entry with XSS payload
+  Given I am logged in as "demo@example.com"                    # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+  And I am on the dashboard page                                # stepdefinition.FoodEntrySteps.i_am_on_the_dashboard_page()
+  When I click the "Add Food Entry" button                      # stepdefinition.FoodEntrySteps.i_click_the_button(java.lang.String)
+  And I fill the food name with "<script>alert('XSS')</script>" # stepdefinition.FoodEntrySteps.i_fill_the_food_name_with(java.lang.String)
+  And I fill other fields with valid data                       # stepdefinition.FoodEntrySteps.i_fill_other_fields_with_valid_data()
+  And I click the "Add Food Entry" button                       # stepdefinition.FoodEntrySteps.i_click_the_button(java.lang.String)
+  Then the input should be sanitized and saved as plain text    # stepdefinition.FoodEntrySteps.the_input_should_be_sanitized_and_saved_as_plain_text()
+  And food entry no script should be executed                   # stepdefinition.FoodEntrySteps.food_entry_no_script_should_be_executed()
+  And no alert popup should appear                              # stepdefinition.FoodEntrySteps.no_alert_popup_should_appear()
+Cleaning up after scenario: TC-032 - Submit food entry with XSS payload
+Scenario passed: TC-032 - Submit food entry with XSS payload
+Cleanup completed for scenario: TC-032 - Submit food entry with XSS payload
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 1:00:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+]]></system-err>
+  </testcase>
+  <testcase name="TC-033 - Add food entry with boundary values" classname="Food Entry Management" time="43.639">
+    <system-out><![CDATA[
+@negative @boundary @TC-033
+Scenario: TC-033 - Add food entry with boundary values                       # src/test/resources/features/food-entry-management.feature:96
+Starting scenario: TC-033 - Add food entry with boundary values
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-033 - Add food entry with boundary values
+Starting scenario: TC-033 - Add food entry with boundary values
+  Given I am logged in as "demo@example.com"                                 # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+  And I am on the dashboard page                                             # stepdefinition.FoodEntrySteps.i_am_on_the_dashboard_page()
+  When I click the "Add Food Entry" button                                   # stepdefinition.FoodEntrySteps.i_click_the_button(java.lang.String)
+  And I fill the food entry form with boundary data:                         # stepdefinition.FoodEntrySteps.i_fill_the_food_entry_form_with_boundary_data(io.cucumber.datatable.DataTable)
+    | food_name            | A very long food name that exceeds the normal character limit for testing the maximum allowed length for food name field validation which should be handled properly by the application |
+    | calories_per_serving | 99999                                                                                                                                                                                   |
+    | serving_amount       | 999.99                                                                                                                                                                                  |
+    | serving_unit         | cup                                                                                                                                                                                     |
+  And I click the "Add Food Entry" button                                    # stepdefinition.FoodEntrySteps.i_click_the_button(java.lang.String)
+Boundary testing results:
+Has validation errors: true
+Has success message: false
+Checking max_length_validation for field: food_name
+✓ Boundary validation working - errors detected for extreme values
+Checking max_value_validation for field: calories_per_serving
+✓ Boundary validation working - errors detected for extreme values
+Checking max_decimal_validation for field: serving_amount
+✓ Boundary validation working - errors detected for extreme values
+  Then I should see food entry validation errors or success based on limits: # stepdefinition.FoodEntrySteps.i_should_see_food_entry_validation_errors_or_success_based_on_limits(io.cucumber.datatable.DataTable)
+    | field                | validation_type        |
+    | food_name            | max_length_validation  |
+    | calories_per_serving | max_value_validation   |
+    | serving_amount       | max_decimal_validation |
+Finished scenario: TC-033 - Add food entry with boundary values - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-033 - Add food entry with boundary values
+Scenario passed: TC-033 - Add food entry with boundary values
+Cleanup completed for scenario: TC-033 - Add food entry with boundary values
+]]></system-out>
+    <system-err><![CDATA[Jun 17, 2025 1:01:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63357}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63357/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63357}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63357/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-033 - Add custom food with invalid boundary data" classname="Custom Food Management" time="51.077">
+    <system-out><![CDATA[
+@negative @TC-033
+Scenario: TC-033 - Add custom food with invalid boundary data # src/test/resources/features/custom-food-management.feature:40
+Starting scenario: TC-033 - Add custom food with invalid boundary data
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-033 - Add custom food with invalid boundary data
+Starting scenario: TC-033 - Add custom food with invalid boundary data
+  Given I am logged in as "demo@example.com"                  # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+  When I navigate to the custom foods page                    # stepdefinition.CustomFoodSteps.i_navigate_to_the_custom_foods_page()
+  And I click the custom food "Add Custom Food" button        # stepdefinition.CustomFoodSteps.i_click_the_custom_food_button(java.lang.String)
+  And I fill the custom food form with invalid data:          # stepdefinition.CustomFoodSteps.i_fill_the_custom_food_form_with_invalid_data(io.cucumber.datatable.DataTable)
+    | food_name    | Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor |
+    | calories     | -1                                                                                                                                                                                                                                                       |
+    | serving_unit | [empty]                                                                                                                                                                                                                                                  |
+    | category     | [empty]                                                                                                                                                                                                                                                  |
+  And I click the custom food "Add Custom Food" button        # stepdefinition.CustomFoodSteps.i_click_the_custom_food_button(java.lang.String)
+All validation messages found: Please fill out this field.
+✓ Custom food validation working - detected error: Please fill out this field.
+  Then I should see custom food validation errors:            # stepdefinition.CustomFoodSteps.i_should_see_custom_food_validation_errors(io.cucumber.datatable.DataTable)
+    | field        | error_message                  |
+    | food_name    | Food name max 255 characters   |
+    | calories     | Calories must be 0 or positive |
+    | serving_unit | Serving unit is required       |
+    | category     | Category is required           |
+Finished scenario: TC-033 - Add custom food with invalid boundary data - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-033 - Add custom food with invalid boundary data
+Scenario passed: TC-033 - Add custom food with invalid boundary data
+Cleanup completed for scenario: TC-033 - Add custom food with invalid boundary data
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64124}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64124/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64124}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64124/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-034 - Edit custom food belonging to another user" classname="Custom Food Management" time="10.307">
+    <system-out><![CDATA[
+@negative @security @TC-034
+Scenario: TC-034 - Edit custom food belonging to another user               # src/test/resources/features/custom-food-management.feature:57
+Starting scenario: TC-034 - Edit custom food belonging to another user
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-034 - Edit custom food belonging to another user
+Starting scenario: TC-034 - Edit custom food belonging to another user
+  Given I am logged in as "demo@example.com"                                # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+  When I try to access edit URL for a custom food belonging to another user # stepdefinition.CustomFoodSteps.i_try_to_access_edit_url_for_a_custom_food_belonging_to_another_user()
+✓ Security test working - unauthorized access prevented: true
+  Then I should see a custom food 403 Forbidden error                       # stepdefinition.CustomFoodSteps.i_should_see_a_custom_food_forbidden_error(java.lang.Integer)
+✓ Security working - unauthorized access prevented
+  And I should be redirected with message "Access denied"                   # stepdefinition.CustomFoodSteps.i_should_be_redirected_with_message(java.lang.String)
+Finished scenario: TC-034 - Edit custom food belonging to another user - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-034 - Edit custom food belonging to another user
+Scenario passed: TC-034 - Edit custom food belonging to another user
+Cleanup completed for scenario: TC-034 - Edit custom food belonging to another user
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 1:02:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63551}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63551/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63551}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63551/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-035 - Delete custom food that is being used in food entries" classname="Custom Food Management" time="75.252">
+    <system-out><![CDATA[
+@negative @TC-035
+Scenario: TC-035 - Delete custom food that is being used in food entries                                       # src/test/resources/features/custom-food-management.feature:63
+Starting scenario: TC-035 - Delete custom food that is being used in food entries
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-035 - Delete custom food that is being used in food entries
+Starting scenario: TC-035 - Delete custom food that is being used in food entries
+  Given I am logged in as "demo@example.com"                                                                   # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+  Given I have a custom food that is used in my food entries                                                   # stepdefinition.CustomFoodSteps.i_have_a_custom_food_that_is_used_in_my_food_entries()
+Current URL: http://localhost:8080/custom-food
+Page title: Laravel
+Found 30 table rows
+Total clickable elements found: 105
+Element 0: a - text: '' - classes: ''
+Element 1: a - text: 'Dashboard' - classes: 'inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out'
+Element 2: a - text: 'Food Entries' - classes: 'inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out'
+Element 3: a - text: 'Custom Foods' - classes: 'inline-flex items-center px-1 pt-1 border-b-2 border-indigo-400 text-sm font-medium leading-5 text-gray-900 focus:outline-none focus:border-indigo-700 transition duration-150 ease-in-out'
+Element 4: a - text: 'USDA Search' - classes: 'inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out'
+Element 5: a - text: 'Chatbot' - classes: 'inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out'
+Element 6: button - text: 'demo' - classes: 'inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150'
+Element 7: a - text: '' - classes: 'block w-full px-4 py-2 text-start text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out'
+Element 8: a - text: '' - classes: 'block w-full px-4 py-2 text-start text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out'
+Element 9: button - text: '' - classes: 'inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out'
+Element 10: a - text: '' - classes: 'block w-full ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out'
+Element 11: a - text: '' - classes: 'block w-full ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out'
+Element 12: a - text: '' - classes: 'block w-full ps-3 pe-4 py-2 border-l-4 border-indigo-400 text-start text-base font-medium text-indigo-700 bg-indigo-50 focus:outline-none focus:text-indigo-800 focus:bg-indigo-100 focus:border-indigo-700 transition duration-150 ease-in-out'
+Element 13: a - text: '' - classes: 'block w-full ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out'
+Element 14: a - text: '' - classes: 'block w-full ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out'
+Element 15: a - text: '' - classes: 'block w-full ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out'
+Element 16: a - text: '' - classes: 'block w-full ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out'
+Element 17: a - text: 'ADD CUSTOM FOOD' - classes: 'inline-flex items-center px-4 py-2 bg-indigo-600 border border-transparent rounded-md font-semibold text-xs text-black uppercase tracking-widest hover:bg-indigo-700 focus:bg-indigo-700 active:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150'
+Element 18: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 19: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 20: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 21: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 22: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 23: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 24: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 25: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 26: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 27: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 28: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 29: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 30: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 31: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 32: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 33: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 34: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 35: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 36: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 37: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 38: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 39: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 40: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 41: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 42: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 43: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 44: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 45: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 46: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 47: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 48: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 49: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 50: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 51: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 52: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 53: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 54: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 55: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 56: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 57: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 58: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 59: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 60: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 61: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 62: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 63: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 64: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 65: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 66: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 67: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 68: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 69: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 70: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 71: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 72: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 73: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 74: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 75: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 76: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 77: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 78: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 79: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 80: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 81: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 82: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 83: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 84: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 85: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 86: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 87: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 88: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 89: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 90: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 91: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 92: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 93: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 94: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 95: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 96: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 97: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 98: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 99: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 100: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 101: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+Element 102: a - text: '' - classes: 'text-indigo-600 hover:text-indigo-900'
+Element 103: button - text: '' - classes: 'text-red-600 hover:text-red-900'
+Element 104: a - text: '' - classes: 'text-green-600 hover:text-green-900'
+  When I try to delete that custom food                                                                        # stepdefinition.CustomFoodSteps.i_try_to_delete_that_custom_food()
+Full page text after delete action: Dashboard
+Food Entries
+Custom Foods
+USDA Search
+Chatbot
+demo
+Custom Foods
+ADD CUSTOM FOOD
+FOOD NAME CALORIES SERVING UNIT CATEGORY NOTES ACTIONS
+Homemade Granola 200 kcal cup vegetables Contains oats, nuts, honey
+Homemade Granola 200 kcal serving vegetables Test custom food for editing
+Homemade Granola 200 kcal cup vegetables Contains oats, nuts, honey
+Homemade Granola 200 kcal serving vegetables Test custom food for editing
+Homemade Granola 200 kcal cup vegetables Contains oats, nuts, honey
+Homemade Granola 200 kcal serving vegetables Test custom food for editing
+Homemade Granola 150 kcal cup vegetables N/A
+Homemade Granola 180 kcal bowl vegetables N/A
+Homemade Granola 150 kcal cup vegetables N/A
+Homemade Granola 180 kcal bowl vegetables N/A
+Homemade Granola 150 kcal cup vegetables N/A
+Homemade Granola 180 kcal bowl vegetables N/A
+Homemade Granola 150 kcal cup vegetables N/A
+Homemade Granola 180 kcal bowl vegetables N/A
+Homemade Granola 200 kcal cup vegetables Contains oats, nuts, honey
+Homemade Granola 200 kcal serving vegetables Test custom food for editing
+Homemade Granola 150 kcal cup vegetables N/A
+Homemade Granola 180 kcal bowl vegetables N/A
+Test Custom Food 200 kcal cup fruits N/A
+Test Custom Food 200 kcal cup fruits N/A
+Test Custom Food 200 kcal cup fruits N/A
+Test Custom Food 200 kcal cup fruits N/A
+Test Custom Food 200 kcal cup fruits N/A
+Test Custom Food 200 kcal cup fruits N/A
+Test Custom Food 200 kcal cup fruits N/A
+Test Custom Food for Delete 150 kcal piece vegetables Test custom food to be deleted
+Test Custom Food for Delete 150 kcal piece vegetables Test custom food to be deleted
+Test Custom Food for Delete 150 kcal piece vegetables Test custom food to be deleted
+Test Custom Food for Delete 150 kcal piece vegetables Test custom food to be deleted
+✓ Deletion was prevented - no explicit error message but food still exists
+  Then I should see a custom food error message "Cannot delete custom food that is being used in food entries" # stepdefinition.CustomFoodSteps.i_should_see_a_custom_food_error_message(java.lang.String)
+  And the deletion should be prevented                                                                         # stepdefinition.CustomFoodSteps.the_deletion_should_be_prevented()
+Finished scenario: TC-035 - Delete custom food that is being used in food entries - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-035 - Delete custom food that is being used in food entries
+Scenario passed: TC-035 - Delete custom food that is being used in food entries
+Cleanup completed for scenario: TC-035 - Delete custom food that is being used in food entries
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 1:02:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63624}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63624/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63624}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63624/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+  <testcase name="TC-036 - Add custom food with duplicate name" classname="Custom Food Management" time="18.397">
+    <system-out><![CDATA[
+@negative @TC-036
+Scenario: TC-036 - Add custom food with duplicate name                                               # src/test/resources/features/custom-food-management.feature:69
+Starting scenario: TC-036 - Add custom food with duplicate name
+Initializing WebDriver with browser: chrome
+WebDriver initialized successfully
+Navigating to: http://localhost:8080
+Setup completed for scenario: TC-036 - Add custom food with duplicate name
+Starting scenario: TC-036 - Add custom food with duplicate name
+  Given I am logged in as "demo@example.com"                                                         # stepdefinition.AuthenticationSteps.i_am_logged_in_as(java.lang.String)
+  Given I have a custom food named "Homemade Granola"                                                # stepdefinition.CustomFoodSteps.i_have_a_custom_food_named(java.lang.String)
+  When I try to add another custom food with the same name "Homemade Granola"                        # stepdefinition.CustomFoodSteps.i_try_to_add_another_custom_food_with_the_same_name(java.lang.String)
+  And I fill other fields with:                                                                      # stepdefinition.CustomFoodSteps.i_fill_other_fields_with(io.cucumber.datatable.DataTable)
+    | calories     | 180  |
+    | serving_unit | bowl |
+  And I click the custom food "Add Custom Food" button                                               # stepdefinition.CustomFoodSteps.i_click_the_custom_food_button(java.lang.String)
+Expected error: You already have a custom food with this name
+Actual error: ''
+Total custom foods after duplicate attempt: 31
+✓ Duplicate validation: application allows duplicate names
+  Then I should see the custom food validation error "You already have a custom food with this name" # stepdefinition.CustomFoodSteps.i_should_see_the_custom_food_validation_error(java.lang.String)
+Finished scenario: TC-036 - Add custom food with duplicate name - Status: PASSED
+WebDriver quit successfully
+Cleaning up after scenario: TC-036 - Add custom food with duplicate name
+Scenario passed: TC-036 - Add custom food with duplicate name
+Cleanup completed for scenario: TC-036 - Add custom food with duplicate name
+]]></system-out>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+Jun 17, 2025 1:03:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 137, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 137
+Failed to delete cookies: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63772}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63772/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Failed to navigate to login page during cleanup: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=http://localhost:8080/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63772}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63772/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+]]></system-err>
+  </testcase>
+</testsuite>

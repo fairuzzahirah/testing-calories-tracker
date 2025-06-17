@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: testrunner.TC014_017_CombinedRunner
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.54 s - in testrunner.TC014_017_CombinedRunner

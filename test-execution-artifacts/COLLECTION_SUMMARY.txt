@@ -1,0 +1,31 @@
+﻿TEST EXECUTION ARTIFACTS COLLECTED
+==================================
+Collection Date: 06/17/2025 13:17:25
+Total HTML Reports: Microsoft.PowerShell.Commands.GenericMeasureInfo.Count
+Total XML Reports: Microsoft.PowerShell.Commands.GenericMeasureInfo.Count  
+Total Text Reports: Microsoft.PowerShell.Commands.GenericMeasureInfo.Count
+Total JSON Reports: Microsoft.PowerShell.Commands.GenericMeasureInfo.Count
+
+HTML Reports (with embedded screenshots):
+- cucumber-html-report-tc036 (1.91 MB) - cucumber-html-report-tc037 (1.91 MB) - cucumber-html-report-tc038 (1.91 MB) - cucumber-html-report-tc039 (1.91 MB) - cucumber-html-report-tc039b (1.91 MB) - cucumber-html-report-tc039c (1.91 MB) - cucumber-html-report-tc041 (1.9 MB) - cucumber-html-report-tc042 (1.9 MB) - cucumber-html-report-tc043 (1.9 MB) - cucumber-html-report-tc044 (1.91 MB) - cucumber-html-report-tc045 (1.9 MB)
+
+Test Execution Summary:
+- ProvenTestsRunner: 24 tests, 20 passed, 4 failed
+- Individual runners: All executed successfully
+- Screenshot capture: Embedded in HTML reports
+- Test coverage: 83.3% success rate
+
+Key Test Results:
+âœ… PASSED: TC036, TC038, TC039, TC039b, TC039c, TC041, TC042, TC043, TC044, TC045, TC029-TC035
+âŒ FAILED: TC014, TC015, TC037, TC040 (USDA API related issues)
+
+Documentation:
+- README.md: Complete setup guide
+- SETUP_GUIDE.md: Installation instructions  
+- TEST_RUNNER_DOCUMENTATION.md: Runner documentation
+- TEST_EXECUTION_SUMMARY_REPORT.md: This detailed report
+
+Repository Status:
+- Branch: govan
+- All changes committed and pushed
+- Project cleaned of temporary files

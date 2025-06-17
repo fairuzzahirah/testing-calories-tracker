@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: testrunner.ProvenTestsRunner
+-------------------------------------------------------------------------------
+Tests run: 24, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 971.786 s <<< FAILURE! - in testrunner.ProvenTestsRunner
+USDA Food Search.TC-014 - Search for food in USDA database  Time elapsed: 42.417 s  <<< FAILURE!
+java.lang.AssertionError: Should be redirected to dashboard
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepdefinition.AuthenticationSteps.i_am_logged_in_as(AuthenticationSteps.java:52)
+	at ✽.I am logged in as "demo@example.com"(file:///C:/Code%20love%20life/kuliah/Project/INTERO2/testing-calories-tracker/src/test/resources/features/usda-food-search.feature:7)
+
+USDA Food Search.TC-015 - Add USDA food to food entries  Time elapsed: 56.593 s  <<< FAILURE!
+java.lang.AssertionError: Search results should be displayed
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepdefinition.USDASearchSteps.i_see_search_results(USDASearchSteps.java:50)
+	at ✽.I see search results(file:///C:/Code%20love%20life/kuliah/Project/INTERO2/testing-calories-tracker/src/test/resources/features/usda-food-search.feature:22)
+
+USDA Food Search.TC-037 - Search USDA with empty query  Time elapsed: 11.354 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I should see the USDA validation error "Please fill out this field"    And the form should not be submitted' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("I should see the USDA validation error {string}    And the form should not be submitted")
+public void i_should_see_the_usda_validation_error_and_the_form_should_not_be_submitted(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+USDA Food Search.TC-040 - USDA API timeout or unavailable  Time elapsed: 71.832 s  <<< FAILURE!
+java.lang.AssertionError: Should show API error message or handle API unavailability gracefully. Expected: 'Food search service is temporarily unavailable. Please try again later.', Got: ''
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepdefinition.USDASearchSteps.i_should_see_a_user_friendly_error_message(USDASearchSteps.java:229)
+	at ✽.I should see a user-friendly error message "Food search service is temporarily unavailable. Please try again later."(file:///C:/Code%20love%20life/kuliah/Project/INTERO2/testing-calories-tracker/src/test/resources/features/usda-food-search.feature:76)
+

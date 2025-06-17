@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: testrunner.TC039cRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 65.737 s - in testrunner.TC039cRunner
