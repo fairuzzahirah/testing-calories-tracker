@@ -172,18 +172,19 @@ This test project was built to:
 * Demonstrate Extent Reports and automated screenshots for failed steps
 * Reuse drivers efficiently with `SharedDriver` and lifecycle hooks
 
+### 📋 Test Case Management
 
----
+All manual and automated test cases are also documented in Qase.io.  
+You can view them via the following link:
+
+🔗 [Qase Test Suite](https://app.qase.io/project/YOUR_PROJECT_CODE)
 
 ## 👨‍💻 Author
 
-Created by Olaf (QA Engineer)
+Created by Anti, Faza, Rila
 
 For questions, improvements, or suggestions, feel free to reach out!
 
 ```
-
----
-
 Let me know if you'd like a downloadable version of this file or for me to generate a `.md` file directly for use.
 ```
