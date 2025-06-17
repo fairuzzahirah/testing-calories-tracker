@@ -177,7 +177,7 @@ This test project was built to:
 All manual and automated test cases are also documented in Qase.io.  
 You can view them via the following link:
 
-🔗 [Qase Test Suite](https://app.qase.io/project/YOUR_PROJECT_CODE)
+🔗 [Qase Test Suite](https://app.qase.io/project/TESTCALORY)
 
 ## 👨‍💻 Author
 
