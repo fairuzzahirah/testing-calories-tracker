@@ -1,4 +1,4 @@
-# 🧪 Testing Calories Tracker
+# Testing Calories Tracker
 
 An automated end-to-end testing framework for a Laravel-based Calories Tracker application (both frontend and backend), built using **Java**, **Selenium WebDriver**, **Cucumber**, and **Gherkin**.
 
